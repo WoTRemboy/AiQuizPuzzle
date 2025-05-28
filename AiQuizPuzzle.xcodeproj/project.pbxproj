@@ -6,17 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		630E712D2DE764E2006B0A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630E712A2DE764E2006B0A21 /* Assets.xcassets */; };
+		630E712E2DE764E2006B0A21 /* AiQuizPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E71292DE764E2006B0A21 /* AiQuizPuzzleApp.swift */; };
+		630E712F2DE764E2006B0A21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E712B2DE764E2006B0A21 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		630E711B2DE764D9006B0A21 /* AiQuizPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiQuizPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630E71292DE764E2006B0A21 /* AiQuizPuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiQuizPuzzleApp.swift; sourceTree = "<group>"; };
+		630E712A2DE764E2006B0A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		630E712B2DE764E2006B0A21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		630E71332DE77DD3006B0A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		630E711D2DE764D9006B0A21 /* AiQuizPuzzle */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AiQuizPuzzle;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		630E71182DE764D9006B0A21 /* Frameworks */ = {
@@ -32,7 +34,7 @@
 		630E71122DE764D9006B0A21 = {
 			isa = PBXGroup;
 			children = (
-				630E711D2DE764D9006B0A21 /* AiQuizPuzzle */,
+				630E712C2DE764E2006B0A21 /* AiQuizPuzzle */,
 				630E711C2DE764D9006B0A21 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +45,41 @@
 				630E711B2DE764D9006B0A21 /* AiQuizPuzzle.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		630E712C2DE764E2006B0A21 /* AiQuizPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				630E71302DE765DE006B0A21 /* Application */,
+				630E71322DE765F9006B0A21 /* MainModule */,
+				630E71312DE765F0006B0A21 /* Support */,
+				630E71332DE77DD3006B0A21 /* Info.plist */,
+			);
+			path = AiQuizPuzzle;
+			sourceTree = "<group>";
+		};
+		630E71302DE765DE006B0A21 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				630E71292DE764E2006B0A21 /* AiQuizPuzzleApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		630E71312DE765F0006B0A21 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				630E712A2DE764E2006B0A21 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		630E71322DE765F9006B0A21 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				630E712B2DE764E2006B0A21 /* ContentView.swift */,
+			);
+			path = MainModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +96,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				630E711D2DE764D9006B0A21 /* AiQuizPuzzle */,
 			);
 			name = AiQuizPuzzle;
 			packageProductDependencies = (
@@ -109,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630E712D2DE764E2006B0A21 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630E712E2DE764E2006B0A21 /* AiQuizPuzzleApp.swift in Sources */,
+				630E712F2DE764E2006B0A21 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,21 +293,30 @@
 				DEVELOPMENT_TEAM = NAJAJ652LV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AiQuizPuzzle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Thinkle;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avoqode.AiQuizPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -284,21 +330,30 @@
 				DEVELOPMENT_TEAM = NAJAJ652LV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AiQuizPuzzle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Thinkle;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avoqode.AiQuizPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
