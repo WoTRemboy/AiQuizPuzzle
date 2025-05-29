@@ -10,6 +10,7 @@
 		630E712D2DE764E2006B0A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630E712A2DE764E2006B0A21 /* Assets.xcassets */; };
 		630E712E2DE764E2006B0A21 /* AiQuizPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E71292DE764E2006B0A21 /* AiQuizPuzzleApp.swift */; };
 		630E712F2DE764E2006B0A21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E712B2DE764E2006B0A21 /* ContentView.swift */; };
+		635B0A392DE87FBF008E016E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A382DE87FBB008E016E /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		630E712A2DE764E2006B0A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		630E712B2DE764E2006B0A21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		630E71332DE77DD3006B0A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		635B0A382DE87FBB008E016E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			children = (
 				630E71302DE765DE006B0A21 /* Application */,
 				630E71322DE765F9006B0A21 /* MainModule */,
+				635B0A372DE87FAF008E016E /* Extensions */,
 				630E71312DE765F0006B0A21 /* Support */,
 				630E71332DE77DD3006B0A21 /* Info.plist */,
 			);
@@ -80,6 +83,14 @@
 				630E712B2DE764E2006B0A21 /* ContentView.swift */,
 			);
 			path = MainModule;
+			sourceTree = "<group>";
+		};
+		635B0A372DE87FAF008E016E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				635B0A382DE87FBB008E016E /* ColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635B0A392DE87FBF008E016E /* ColorExtension.swift in Sources */,
 				630E712E2DE764E2006B0A21 /* AiQuizPuzzleApp.swift in Sources */,
 				630E712F2DE764E2006B0A21 /* ContentView.swift in Sources */,
 			);
