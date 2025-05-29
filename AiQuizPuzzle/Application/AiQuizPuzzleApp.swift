@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct AiQuizPuzzleApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
