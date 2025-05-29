@@ -8,5 +8,7 @@
 import SwiftUI
 
 extension Image {
-    
+    enum Onboarding {
+        static let splashScreenLogo = Image("OnboardingScreenLogo")
+    }
 }

@@ -14,6 +14,7 @@
 		635B0A3B2DE88157008E016E /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A3A2DE88153008E016E /* ImageExtension.swift */; };
 		635B0A3D2DE88161008E016E /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A3C2DE8815E008E016E /* Labels.swift */; };
 		635B0A3F2DE8820A008E016E /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A3E2DE88207008E016E /* ViewExtension.swift */; };
+		635B0A432DE8849D008E016E /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A422DE88498008E016E /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		635B0A3A2DE88153008E016E /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		635B0A3C2DE8815E008E016E /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		635B0A3E2DE88207008E016E /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		635B0A422DE88498008E016E /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				630E71302DE765DE006B0A21 /* Application */,
-				630E71322DE765F9006B0A21 /* MainModule */,
+				635B0A402DE88476008E016E /* Modules */,
 				635B0A372DE87FAF008E016E /* Extensions */,
 				630E71312DE765F0006B0A21 /* Support */,
 				630E71332DE77DD3006B0A21 /* Info.plist */,
@@ -100,6 +102,23 @@
 				635B0A3E2DE88207008E016E /* ViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		635B0A402DE88476008E016E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				635B0A412DE8847F008E016E /* OpeningModule */,
+				630E71322DE765F9006B0A21 /* MainModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		635B0A412DE8847F008E016E /* OpeningModule */ = {
+			isa = PBXGroup;
+			children = (
+				635B0A422DE88498008E016E /* SplashScreenView.swift */,
+			);
+			path = OpeningModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635B0A432DE8849D008E016E /* SplashScreenView.swift in Sources */,
 				635B0A3F2DE8820A008E016E /* ViewExtension.swift in Sources */,
 				635B0A392DE87FBF008E016E /* ColorExtension.swift in Sources */,
 				635B0A3D2DE88161008E016E /* Labels.swift in Sources */,
