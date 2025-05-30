@@ -22,4 +22,14 @@ extension View {
     internal func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
+    
+    internal func hAlign(_ alignment: Alignment) -> some View {
+        self
+            .frame(maxWidth: .infinity, alignment: alignment)
+    }
+    
+    internal func vAlign(_ alignment: Alignment) -> some View {
+        self
+            .frame(maxHeight: .infinity, alignment: alignment)
+    }
 }

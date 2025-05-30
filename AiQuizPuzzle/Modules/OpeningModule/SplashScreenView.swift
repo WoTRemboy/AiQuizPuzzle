@@ -25,7 +25,7 @@ struct SplashScreenView: View {
     internal var body: some View {
         if isActive {
             // Navigates to the onboarding screen
-            QuizView()
+            QuizInfoView()
         } else {
             // Displays splash screen content
             content
