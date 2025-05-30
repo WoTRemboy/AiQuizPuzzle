@@ -54,7 +54,7 @@ struct SplashScreenView: View {
                 Image.Onboarding.splashScreenLogo
                     .resizable()
                     .scaledToFit()
-                    .clipShape(.buttonBorder)
+                    .clipShape(.rect(cornerRadius: 50))
                     .frame(height: 300)
                 
                 // App title text

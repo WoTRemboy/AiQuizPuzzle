@@ -15,4 +15,8 @@ struct QuizInfo: Codable {
         case title
         case rules
     }
+    
+    internal static var sampleData: QuizInfo {
+        QuizInfo(title: "Sample Quiz", rules: ["Sample rule 1", "Sample rule 2"])
+    }
 }

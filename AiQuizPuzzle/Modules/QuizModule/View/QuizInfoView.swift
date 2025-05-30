@@ -36,29 +36,15 @@ struct QuizInfoView: View {
                     rulesView(quizInfo.rules)
                 }
                 
-                Button {
+                CustomButton(title: "Start Test") {
                     startQuiz.toggle()
-                } label: {
-                    Text("Start Test")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .hAlign(.center)
-                        .padding(.top, 15)
-                        .padding(.bottom, 10)
-                        .foregroundStyle(.white)
-                        .background {
-                            Rectangle()
-                                .fill(Color.pink)
-                                .ignoresSafeArea()
-                        }
                 }
-                .padding([.bottom, .horizontal], -15)
                 .vAlign(.bottom)
             }
             .padding(15)
             .vAlign(.top)
             .fullScreenCover(isPresented: $startQuiz) {
-                Text("Quiz Started")
+                QuizQestionsView(info: quizInfo, questions: questions)
             }
         } else {
             VStack(spacing: 4) {
@@ -162,4 +148,30 @@ struct QuizInfoView: View {
 
 #Preview {
     QuizInfoView()
+}
+
+
+struct CustomButton: View {
+    var title: String
+    var onClick: () -> Void
+    
+    var body: some View {
+        Button {
+            onClick()
+        } label: {
+            Text(title)
+                .font(.title3)
+                .fontWeight(.semibold)
+                .hAlign(.center)
+                .padding(.top, 15)
+                .padding(.bottom, 10)
+                .foregroundStyle(.white)
+                .background {
+                    Rectangle()
+                        .fill(Color.pink)
+                        .ignoresSafeArea()
+                }
+        }
+        .padding([.bottom, .horizontal], -15)
+    }
 }

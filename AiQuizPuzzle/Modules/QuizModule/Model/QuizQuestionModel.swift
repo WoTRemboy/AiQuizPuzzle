@@ -20,4 +20,10 @@ struct QuizQuestion: Identifiable, Codable {
         case options
         case answer
     }
+    
+    internal static var sampleData: [QuizQuestion] {
+        let first = QuizQuestion(question: "What is your name?", options: ["Roman", "John", "Alex", "Max"], answer: "Roman")
+        let second = QuizQuestion(question: "Where do you live?", options: ["Moscow", "Saint Petersburg", "Yekaterinburg", "Nizhny Novgorod"], answer: "Saint Petersburg")
+        return [first, second]
+    }
 }
