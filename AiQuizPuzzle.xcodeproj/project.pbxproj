@@ -9,15 +9,35 @@
 /* Begin PBXBuildFile section */
 		630E712D2DE764E2006B0A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630E712A2DE764E2006B0A21 /* Assets.xcassets */; };
 		630E712E2DE764E2006B0A21 /* AiQuizPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E71292DE764E2006B0A21 /* AiQuizPuzzleApp.swift */; };
-		630E712F2DE764E2006B0A21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E712B2DE764E2006B0A21 /* ContentView.swift */; };
+		635B0A392DE87FBF008E016E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A382DE87FBB008E016E /* ColorExtension.swift */; };
+		635B0A3B2DE88157008E016E /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A3A2DE88153008E016E /* ImageExtension.swift */; };
+		635B0A3D2DE88161008E016E /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A3C2DE8815E008E016E /* Labels.swift */; };
+		635B0A3F2DE8820A008E016E /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A3E2DE88207008E016E /* ViewExtension.swift */; };
+		635B0A432DE8849D008E016E /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A422DE88498008E016E /* SplashScreenView.swift */; };
+		635B0A452DE8882B008E016E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 635B0A442DE8882B008E016E /* GoogleService-Info.plist */; };
+		635B0A482DE888D5008E016E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 635B0A472DE888D5008E016E /* FirebaseAuth */; };
+		635B0A4A2DE888D5008E016E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 635B0A492DE888D5008E016E /* FirebaseFirestore */; };
+		63F9D15B2DEA0F7C00C7598A /* QuizInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9D15A2DEA0F7100C7598A /* QuizInfoModel.swift */; };
+		63F9D15D2DEA102600C7598A /* QuizQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9D15C2DEA101F00C7598A /* QuizQuestionModel.swift */; };
+		63F9D1622DEA116A00C7598A /* QuizInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9D1612DEA116A00C7598A /* QuizInfoView.swift */; };
+		63F9D1692DEA315700C7598A /* QuizQestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9D1682DEA315700C7598A /* QuizQestionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		630E711B2DE764D9006B0A21 /* AiQuizPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiQuizPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		630E71292DE764E2006B0A21 /* AiQuizPuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiQuizPuzzleApp.swift; sourceTree = "<group>"; };
 		630E712A2DE764E2006B0A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		630E712B2DE764E2006B0A21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		630E71332DE77DD3006B0A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		635B0A382DE87FBB008E016E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		635B0A3A2DE88153008E016E /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		635B0A3C2DE8815E008E016E /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		635B0A3E2DE88207008E016E /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		635B0A422DE88498008E016E /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		635B0A442DE8882B008E016E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63F9D15A2DEA0F7100C7598A /* QuizInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfoModel.swift; sourceTree = "<group>"; };
+		63F9D15C2DEA101F00C7598A /* QuizQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionModel.swift; sourceTree = "<group>"; };
+		63F9D1612DEA116A00C7598A /* QuizInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfoView.swift; sourceTree = "<group>"; };
+		63F9D1682DEA315700C7598A /* QuizQestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQestionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635B0A482DE888D5008E016E /* FirebaseAuth in Frameworks */,
+				635B0A4A2DE888D5008E016E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				630E712C2DE764E2006B0A21 /* AiQuizPuzzle */,
+				63F9D1632DEA144E00C7598A /* Frameworks */,
 				630E711C2DE764D9006B0A21 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,9 +74,11 @@
 			isa = PBXGroup;
 			children = (
 				630E71302DE765DE006B0A21 /* Application */,
-				630E71322DE765F9006B0A21 /* MainModule */,
+				635B0A402DE88476008E016E /* Modules */,
+				635B0A372DE87FAF008E016E /* Extensions */,
 				630E71312DE765F0006B0A21 /* Support */,
 				630E71332DE77DD3006B0A21 /* Info.plist */,
+				635B0A442DE8882B008E016E /* GoogleService-Info.plist */,
 			);
 			path = AiQuizPuzzle;
 			sourceTree = "<group>";
@@ -74,12 +99,66 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		630E71322DE765F9006B0A21 /* MainModule */ = {
+		630E71322DE765F9006B0A21 /* QuizModule */ = {
 			isa = PBXGroup;
 			children = (
-				630E712B2DE764E2006B0A21 /* ContentView.swift */,
+				63F9D1592DEA0F5000C7598A /* Model */,
+				63F9D15E2DEA114100C7598A /* View */,
 			);
-			path = MainModule;
+			path = QuizModule;
+			sourceTree = "<group>";
+		};
+		635B0A372DE87FAF008E016E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				635B0A382DE87FBB008E016E /* ColorExtension.swift */,
+				635B0A3A2DE88153008E016E /* ImageExtension.swift */,
+				635B0A3C2DE8815E008E016E /* Labels.swift */,
+				635B0A3E2DE88207008E016E /* ViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		635B0A402DE88476008E016E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				635B0A412DE8847F008E016E /* OpeningModule */,
+				630E71322DE765F9006B0A21 /* QuizModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		635B0A412DE8847F008E016E /* OpeningModule */ = {
+			isa = PBXGroup;
+			children = (
+				635B0A422DE88498008E016E /* SplashScreenView.swift */,
+			);
+			path = OpeningModule;
+			sourceTree = "<group>";
+		};
+		63F9D1592DEA0F5000C7598A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63F9D15A2DEA0F7100C7598A /* QuizInfoModel.swift */,
+				63F9D15C2DEA101F00C7598A /* QuizQuestionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63F9D15E2DEA114100C7598A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63F9D1612DEA116A00C7598A /* QuizInfoView.swift */,
+				63F9D1682DEA315700C7598A /* QuizQestionsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63F9D1632DEA144E00C7598A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +178,8 @@
 			);
 			name = AiQuizPuzzle;
 			packageProductDependencies = (
+				635B0A472DE888D5008E016E /* FirebaseAuth */,
+				635B0A492DE888D5008E016E /* FirebaseFirestore */,
 			);
 			productName = AiQuizPuzzle;
 			productReference = 630E711B2DE764D9006B0A21 /* AiQuizPuzzle.app */;
@@ -128,6 +209,9 @@
 			);
 			mainGroup = 630E71122DE764D9006B0A21;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				635B0A462DE888D5008E016E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 630E711C2DE764D9006B0A21 /* Products */;
 			projectDirPath = "";
@@ -144,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				630E712D2DE764E2006B0A21 /* Assets.xcassets in Resources */,
+				635B0A452DE8882B008E016E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +239,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635B0A432DE8849D008E016E /* SplashScreenView.swift in Sources */,
+				635B0A3F2DE8820A008E016E /* ViewExtension.swift in Sources */,
+				63F9D1622DEA116A00C7598A /* QuizInfoView.swift in Sources */,
+				635B0A392DE87FBF008E016E /* ColorExtension.swift in Sources */,
+				635B0A3D2DE88161008E016E /* Labels.swift in Sources */,
+				63F9D1692DEA315700C7598A /* QuizQestionsView.swift in Sources */,
+				63F9D15B2DEA0F7C00C7598A /* QuizInfoModel.swift in Sources */,
 				630E712E2DE764E2006B0A21 /* AiQuizPuzzleApp.swift in Sources */,
-				630E712F2DE764E2006B0A21 /* ContentView.swift in Sources */,
+				63F9D15D2DEA102600C7598A /* QuizQuestionModel.swift in Sources */,
+				635B0A3B2DE88157008E016E /* ImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +393,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avoqode.AiQuizPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -337,14 +430,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avoqode.AiQuizPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -379,6 +472,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		635B0A462DE888D5008E016E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		635B0A472DE888D5008E016E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 635B0A462DE888D5008E016E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		635B0A492DE888D5008E016E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 635B0A462DE888D5008E016E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 630E71132DE764D9006B0A21 /* Project object */;
 }
