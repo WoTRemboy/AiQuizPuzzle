@@ -64,6 +64,7 @@ final class Keys {
     enum Namespace {
         enum Onboarding {
             static let progressCircle = "OnboardingProgressCircle"
+            static let appName = "OnboardingAppName"
         }
     }
 }

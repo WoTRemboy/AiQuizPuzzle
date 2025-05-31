@@ -29,26 +29,57 @@ struct OnboardingScreenView: View {
         VStack(spacing: 0) {
             title
                 .padding(.top, 54)
-            cardContent
             
-            progressCircles
-                .padding(.bottom, 20)
+            if viewModel.beginOnboarding {
+                mainOnboardingContent
+            } else {
+                introContent
+            }
+            
             nextPageButton
                 .padding(.bottom, 28)
         }
     }
     
+    private var introContent: some View {
+        titleImage
+            .frame(maxHeight: .infinity, alignment: .center)
+            .padding(.horizontal, 38)
+    }
+    
+    private var mainOnboardingContent: some View {
+        VStack(spacing: 0) {
+            cardContent
+                .transition(.scale)
+            progressCircles
+                .padding(.bottom, 20)
+        }
+    }
+    
     private var title: some View {
         VStack(spacing: 16) {
-            Text(Texts.Onboarding.about)
-                .font(.Onboarding.title())
-                .foregroundStyle(Color.LabelColors.labelReversed)
+            Text(viewModel.beginOnboarding
+                 ? Texts.Onboarding.about
+                 : Texts.Onboarding.welcome)
+            .font(.Onboarding.title())
+            .foregroundStyle(Color.LabelColors.labelReversed)
+            .multilineTextAlignment(.center)
+            .contentTransition(.numericText())
             
-            Image.Opening.Onboarding.appName
-                .resizable()
-                .scaledToFit()
-                .frame(height: 50)
+            if viewModel.beginOnboarding {
+                titleImage
+                    .frame(height: 50)
+            }
         }
+    }
+    
+    private var titleImage: some View {
+        Image.Opening.Onboarding.appName
+            .resizable()
+            .scaledToFit()
+            .matchedGeometryEffect(
+                id: Keys.Namespace.Onboarding.appName,
+                in: namespace)
     }
     
     private var cardContent: some View {
@@ -88,16 +119,21 @@ struct OnboardingScreenView: View {
                 }
             }
         }
+        .transition(.scale)
     }
     
     private var nextPageButton: some View {
         Button {
-            if !viewModel.isLastPage(current: page.index) {
-                withAnimation {
-                    page.update(.next)
-                }
-            } else {
+            if viewModel.isLastPage(current: page.index) {
                 viewModel.transferToMainPage()
+            } else {
+                withAnimation(.snappy) {
+                    if viewModel.beginOnboarding {
+                        page.update(.next)
+                    } else {
+                        viewModel.toggleBeginOnboarding()
+                    }
+                }
             }
         } label: {
             Text(!viewModel.isLastPage(current: page.index)
