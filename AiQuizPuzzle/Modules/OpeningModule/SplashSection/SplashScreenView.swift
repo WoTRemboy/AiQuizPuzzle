@@ -51,7 +51,7 @@ struct SplashScreenView: View {
             
             VStack(spacing: 30) {
                 // App logo
-                Image.Onboarding.splashScreenLogo
+                Image.Opening.SpashScreen.logo
                     .resizable()
                     .scaledToFit()
                     .clipShape(.rect(cornerRadius: 50))

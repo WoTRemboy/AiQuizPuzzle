@@ -8,7 +8,19 @@
 import SwiftUI
 
 extension Image {
-    enum Onboarding {
-        static let splashScreenLogo = Image("OnboardingScreenLogo")
+    enum Opening {
+        enum SpashScreen {
+            static let logo = Image("OnboardingScreenLogo")
+        }
+        
+        enum Onboarding {
+            static let appName = Image("OnboardingAppName")
+            
+            static let first = Image("OnboardingFirst")
+            static let second = Image("OnboardingSecond")
+            static let third = Image("OnboardingThird")
+            static let fourth = Image("OnboardingFourth")
+            static let fifth = Image("OnboardingFifth")
+        }
     }
 }
