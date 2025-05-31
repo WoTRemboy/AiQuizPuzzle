@@ -18,6 +18,16 @@ final class Texts {
         static let welcome = "Добро пожаловать!"
         static let about = "Немного о"
         
+        enum Terms {
+            static let markdown = "By clicking Start, you agree to our [Terms of Service](https://avoqode.com/terms-of-service) and [Privacy Policy](https://avoqode.com/privacy-policy)."
+            static let markdownError = "Error parsing Terms of Service and Privacy Policy"
+        }
+        
+        enum Button {
+            static let next = "Продолжить"
+            static let start = "Начать"
+        }
+        
         enum FirstPage {
             static let title = "Испытай ум"
             static let description = "Проходи квизы, созданные ИИ, которые подстраиваются под твой уровень"
@@ -49,5 +59,11 @@ final class Texts {
 final class Keys {
     enum UserDefaults {
         static let skipOnboarding = "SkipOnboarding"
+    }
+    
+    enum Namespace {
+        enum Onboarding {
+            static let progressCircle = "OnboardingProgressCircle"
+        }
     }
 }

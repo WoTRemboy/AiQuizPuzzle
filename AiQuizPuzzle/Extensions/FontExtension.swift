@@ -14,6 +14,10 @@ extension Font {
             Font.system(size: 50, weight: .semibold)
         }
         
+        static func button() -> Font? {
+            Font.system(size: 20, weight: .semibold)
+        }
+        
         enum Card {
             static func title() -> Font? {
                 Font.system(size: 25, weight: .semibold)

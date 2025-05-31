@@ -14,6 +14,7 @@ struct OnboardingScreenView: View {
     @StateObject private var viewModel = OnboardingViewModel()
     /// Current page tracker for the pager.
     @StateObject private var page: Page = .first()
+    @Namespace private var namespace
     
     internal var body: some View {
         if viewModel.skipOnboarding {
@@ -27,7 +28,13 @@ struct OnboardingScreenView: View {
     private var onboardingFlow: some View {
         VStack(spacing: 0) {
             title
+                .padding(.top, 54)
             cardContent
+            
+            progressCircles
+                .padding(.bottom, 20)
+            nextPageButton
+                .padding(.bottom, 28)
         }
     }
     
@@ -61,6 +68,69 @@ struct OnboardingScreenView: View {
         
               .swipeInteractionArea(.allAvailable)
               .horizontal()
+    }
+    
+    private var progressCircles: some View {
+        HStack(spacing: 28) {
+            ForEach(viewModel.pages, id: \.self) { step in
+                if step == page.index {
+                    Capsule()
+                        .frame(width: 30, height: 10)
+                        .foregroundStyle(.regularMaterial)
+                        .matchedGeometryEffect(
+                            id: Keys.Namespace.Onboarding.progressCircle,
+                            in: namespace)
+                } else {
+                    Circle()
+                        .frame(width: 10, height: 10)
+                        .foregroundStyle(.ultraThinMaterial)
+                        .transition(.scale)
+                }
+            }
+        }
+    }
+    
+    private var nextPageButton: some View {
+        Button {
+            if !viewModel.isLastPage(current: page.index) {
+                withAnimation {
+                    page.update(.next)
+                }
+            } else {
+                viewModel.transferToMainPage()
+            }
+        } label: {
+            Text(!viewModel.isLastPage(current: page.index)
+                 ? Texts.Onboarding.Button.next
+                 : Texts.Onboarding.Button.start)
+            .font(.Onboarding.button())
+            .contentTransition(.numericText())
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            
+            .foregroundColor(Color.LabelColors.labelReversed)
+            .background(Color.Button.orange)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+        }
+        .frame(height: 68)
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 28)
+    }
+    
+    // MARK: - Terms and Policy
+    
+    /// Displays the terms of service and privacy policy acknowledgment text.
+    private var termsPolicyLabel: some View {
+        if let attributedText = try? AttributedString(markdown: Texts.Onboarding.Terms.markdown) {
+            return Text(attributedText)
+                .font(.system(size: 14))
+                .fontWeight(.medium)
+                .foregroundStyle(Color.LabelColors.labelReversed)
+        } else {
+            return Text(Texts.Onboarding.Terms.markdownError)
+                .font(.system(size: 14))
+                .fontWeight(.medium)
+                .foregroundStyle(Color.LabelColors.labelReversed)
+        }
     }
     
     private var background: some View {

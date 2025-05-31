@@ -23,13 +23,18 @@ struct OnboardingCardView: View {
         VStack(spacing: 0) {
             titleLabel
                 .padding(.top, 14)
+                .blendMode(.destinationOut)
             descriptionLabel
                 .padding(.top, 12)
+                .blendMode(.destinationOut)
             imageView
                 .padding(.top, 19)
+                .blendMode(.destinationOut)
         }
         .padding(.horizontal, 12)
         .background(background)
+        
+        .compositingGroup()
         .padding(.horizontal, 60)
     }
     
@@ -50,7 +55,6 @@ struct OnboardingCardView: View {
             .resizable()
             .scaledToFit()
             .frame(height: 130)
-            .background(Color.red)
             .padding(.bottom, 28)
     }
     
