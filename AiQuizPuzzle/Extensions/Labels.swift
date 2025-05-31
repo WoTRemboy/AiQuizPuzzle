@@ -44,3 +44,10 @@ final class Texts {
         }
     }
 }
+
+
+final class Keys {
+    enum UserDefaults {
+        static let skipOnboarding = "SkipOnboarding"
+    }
+}
