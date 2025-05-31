@@ -23,6 +23,9 @@
 		636F35472DEB122800B19323 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 636F35462DEB122800B19323 /* SwiftUIPager */; };
 		636F35492DEB13F300B19323 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F35482DEB13F000B19323 /* FontExtension.swift */; };
 		636F354B2DEB169300B19323 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F354A2DEB169300B19323 /* OnboardingCardView.swift */; };
+		63936D2B2DEB6BC700940B34 /* EpilepsySans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D292DEB6BC700940B34 /* EpilepsySans.ttf */; };
+		63936D2C2DEB6BC700940B34 /* EpilepsySansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */; };
+		63936D302DEB6E1800940B34 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */; };
 		63F9D15B2DEA0F7C00C7598A /* QuizInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9D15A2DEA0F7100C7598A /* QuizInfoModel.swift */; };
 		63F9D15D2DEA102600C7598A /* QuizQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9D15C2DEA101F00C7598A /* QuizQuestionModel.swift */; };
 		63F9D1622DEA116A00C7598A /* QuizInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9D1612DEA116A00C7598A /* QuizInfoView.swift */; };
@@ -45,6 +48,9 @@
 		636F35432DEB0D5500B19323 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		636F35482DEB13F000B19323 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		636F354A2DEB169300B19323 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
+		63936D292DEB6BC700940B34 /* EpilepsySans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySans.ttf; sourceTree = "<group>"; };
+		63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySansBold.ttf; sourceTree = "<group>"; };
+		63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
 		63F9D15A2DEA0F7100C7598A /* QuizInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfoModel.swift; sourceTree = "<group>"; };
 		63F9D15C2DEA101F00C7598A /* QuizQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionModel.swift; sourceTree = "<group>"; };
 		63F9D1612DEA116A00C7598A /* QuizInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfoView.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 				635B0A402DE88476008E016E /* Modules */,
 				635B0A372DE87FAF008E016E /* Extensions */,
 				630E71312DE765F0006B0A21 /* Support */,
+				63936D262DEB6B7600940B34 /* Fonts */,
 				630E71332DE77DD3006B0A21 /* Info.plist */,
 				635B0A442DE8882B008E016E /* GoogleService-Info.plist */,
 			);
@@ -193,6 +200,32 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		63936D262DEB6B7600940B34 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				63936D2D2DEB6DA600940B34 /* EpilepsySans */,
+				63936D2E2DEB6DBA00940B34 /* Micro5 */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		63936D2D2DEB6DA600940B34 /* EpilepsySans */ = {
+			isa = PBXGroup;
+			children = (
+				63936D292DEB6BC700940B34 /* EpilepsySans.ttf */,
+				63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */,
+			);
+			path = EpilepsySans;
+			sourceTree = "<group>";
+		};
+		63936D2E2DEB6DBA00940B34 /* Micro5 */ = {
+			isa = PBXGroup;
+			children = (
+				63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */,
+			);
+			path = Micro5;
+			sourceTree = "<group>";
+		};
 		63F9D1592DEA0F5000C7598A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,8 +319,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63936D2B2DEB6BC700940B34 /* EpilepsySans.ttf in Resources */,
+				63936D2C2DEB6BC700940B34 /* EpilepsySansBold.ttf in Resources */,
 				630E712D2DE764E2006B0A21 /* Assets.xcassets in Resources */,
 				635B0A452DE8882B008E016E /* GoogleService-Info.plist in Resources */,
+				63936D302DEB6E1800940B34 /* Micro5-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
