@@ -10,7 +10,7 @@ import SwiftUI
 extension Image {
     enum Opening {
         enum SpashScreen {
-            static let logo = Image("OnboardingScreenLogo")
+            static let logo = Image("SplashScreenLogo")
         }
         
         enum Onboarding {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6301F5DF2DEC5E450088C864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6301F5DE2DEC5E450088C864 /* LaunchScreen.storyboard */; };
 		630E712D2DE764E2006B0A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630E712A2DE764E2006B0A21 /* Assets.xcassets */; };
 		630E712E2DE764E2006B0A21 /* AiQuizPuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E71292DE764E2006B0A21 /* AiQuizPuzzleApp.swift */; };
 		635B0A392DE87FBF008E016E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A382DE87FBB008E016E /* ColorExtension.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6301F5DE2DEC5E450088C864 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		630E711B2DE764D9006B0A21 /* AiQuizPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiQuizPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		630E71292DE764E2006B0A21 /* AiQuizPuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiQuizPuzzleApp.swift; sourceTree = "<group>"; };
 		630E712A2DE764E2006B0A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				635B0A422DE88498008E016E /* SplashScreenView.swift */,
+				6301F5DE2DEC5E450088C864 /* LaunchScreen.storyboard */,
 			);
 			path = SplashSection;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				63936D2B2DEB6BC700940B34 /* EpilepsySans.ttf in Resources */,
 				63936D2C2DEB6BC700940B34 /* EpilepsySansBold.ttf in Resources */,
 				630E712D2DE764E2006B0A21 /* Assets.xcassets in Resources */,
+				6301F5DF2DEC5E450088C864 /* LaunchScreen.storyboard in Resources */,
 				635B0A452DE8882B008E016E /* GoogleService-Info.plist in Resources */,
 				63936D302DEB6E1800940B34 /* Micro5-Regular.ttf in Resources */,
 			);
@@ -481,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NAJAJ652LV;
@@ -493,6 +498,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -518,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NAJAJ652LV;
@@ -530,6 +538,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
