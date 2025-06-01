@@ -18,21 +18,21 @@ extension Font {
         
         enum Onboarding {
             static func title() -> Font? {
-                Font.system(size: 50, weight: .semibold)
+                Font.custom("EpilepsySansBold", size: 50)
             }
             
             static func button() -> Font? {
-                Font.system(size: 20, weight: .semibold)
+                Font.custom("EpilepsySans", size: 30)
             }
         }
         
         enum Card {
             static func title() -> Font? {
-                Font.system(size: 25, weight: .semibold)
+                Font.custom("EpilepsySansBold", size: 25)
             }
             
             static func description() -> Font? {
-                Font.system(size: 15, weight: .medium)
+                Font.custom("EpilepsySans", size: 20)
             }
         }
     }
