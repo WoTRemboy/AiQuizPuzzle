@@ -43,4 +43,14 @@ extension Color {
         static let supportSegmented = Color("SupportSegmented")
         static let supportPopup = Color("SupportPopup")
     }
+    
+    enum Button {
+        static let orange = Color("ButtonColorOrange")
+    }
+    
+    enum GradientColors {
+        static let orange = Color("GradientOrange")
+        static let red = Color("GradientRed")
+        static let purple = Color("GradientPurple")
+    }
 }
