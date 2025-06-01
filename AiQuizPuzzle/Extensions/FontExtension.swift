@@ -9,13 +9,21 @@ import SwiftUI
 
 extension Font {
     
-    enum Onboarding {
-        static func title() -> Font? {
-            Font.system(size: 50, weight: .semibold)
+    enum Opening {
+        enum SplashScreen {
+            static func title() -> Font? {
+                Font.custom("Micro5-Regular", size: 150)
+            }
         }
         
-        static func button() -> Font? {
-            Font.system(size: 20, weight: .semibold)
+        enum Onboarding {
+            static func title() -> Font? {
+                Font.system(size: 50, weight: .semibold)
+            }
+            
+            static func button() -> Font? {
+                Font.system(size: 20, weight: .semibold)
+            }
         }
         
         enum Card {

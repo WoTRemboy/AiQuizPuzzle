@@ -32,6 +32,7 @@ struct OnboardingScreenView: View {
             
             if viewModel.beginOnboarding {
                 mainOnboardingContent
+                    .transition(.scale)
             } else {
                 introContent
             }
@@ -50,7 +51,6 @@ struct OnboardingScreenView: View {
     private var mainOnboardingContent: some View {
         VStack(spacing: 0) {
             cardContent
-                .transition(.scale)
             progressCircles
                 .padding(.bottom, 20)
         }
@@ -61,7 +61,7 @@ struct OnboardingScreenView: View {
             Text(viewModel.beginOnboarding
                  ? Texts.Onboarding.about
                  : Texts.Onboarding.welcome)
-            .font(.Onboarding.title())
+            .font(.Opening.Onboarding.title())
             .foregroundStyle(Color.LabelColors.labelReversed)
             .multilineTextAlignment(.center)
             .contentTransition(.numericText())
@@ -119,7 +119,6 @@ struct OnboardingScreenView: View {
                 }
             }
         }
-        .transition(.scale)
     }
     
     private var nextPageButton: some View {
@@ -139,7 +138,7 @@ struct OnboardingScreenView: View {
             Text(!viewModel.isLastPage(current: page.index)
                  ? Texts.Onboarding.Button.next
                  : Texts.Onboarding.Button.start)
-            .font(.Onboarding.button())
+            .font(.Opening.Onboarding.button())
             .contentTransition(.numericText())
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             

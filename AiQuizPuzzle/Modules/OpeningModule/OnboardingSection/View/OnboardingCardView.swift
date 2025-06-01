@@ -40,12 +40,12 @@ struct OnboardingCardView: View {
     
     private var titleLabel: some View {
         Text(title)
-            .font(.Onboarding.Card.title())
+            .font(.Opening.Card.title())
     }
     
     private var descriptionLabel: some View {
         Text(description)
-            .font(.Onboarding.Card.description())
+            .font(.Opening.Card.description())
             .multilineTextAlignment(.center)
             .frame(maxWidth: .infinity, alignment: .center)
     }

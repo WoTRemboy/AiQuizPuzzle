@@ -46,7 +46,7 @@ struct SplashScreenView: View {
     private var content: some View {
         ZStack {
             // Background color
-            Color.BackColors.backDefault
+            Color.purple
                 .ignoresSafeArea()
             
             VStack(spacing: 30) {
@@ -59,11 +59,12 @@ struct SplashScreenView: View {
                 
                 // App title text
                 Text(texts[id])
-                    .foregroundStyle(Color.LabelColors.labelPrimary)
-                    .font(.system(size: 80, weight: .medium))
+                    .foregroundStyle(Color.LabelColors.labelReversed)
+                    .font(.Opening.SplashScreen.title())
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
-                    .padding(.horizontal, 30)
+                    .padding(.leading, 20)
+                    .padding(.trailing, 10)
             }
             .contentTransition(.numericText())
             .onAppear {
