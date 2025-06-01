@@ -49,7 +49,7 @@ struct SplashScreenView: View {
             Color.purple
                 .ignoresSafeArea()
             
-            VStack(spacing: 30) {
+            VStack(spacing: 20) {
                 // App logo
                 Image.Opening.SpashScreen.logo
                     .resizable()

@@ -17,6 +17,8 @@ struct OnboardingStep {
     let description: String
     /// Image associated with this onboarding step.
     let image: Image
+    
+    let type: OnboardingPage
 }
 
 // MARK: - Onboarding Step Setup
@@ -28,23 +30,28 @@ extension OnboardingStep {
     static func stepsSetup() -> [OnboardingStep] {
         let first = OnboardingStep(name: Texts.Onboarding.FirstPage.title,
                                    description: Texts.Onboarding.FirstPage.description,
-                                   image: .Opening.Onboarding.first)
+                                   image: .Opening.Onboarding.first,
+                                   type: .first)
         
         let second = OnboardingStep(name: Texts.Onboarding.SecondPage.title,
                                     description: Texts.Onboarding.SecondPage.description,
-                                    image: .Opening.Onboarding.second)
+                                    image: .Opening.Onboarding.second,
+                                    type: .second)
         
         let third = OnboardingStep(name: Texts.Onboarding.ThirdPage.title,
                                    description: Texts.Onboarding.ThirdPage.description,
-                                   image: .Opening.Onboarding.third)
+                                   image: .Opening.Onboarding.third,
+                                   type: .third)
         
         let fourth = OnboardingStep(name: Texts.Onboarding.FourthPage.title,
                                     description: Texts.Onboarding.FourthPage.description,
-                                    image: .Opening.Onboarding.fourth)
+                                    image: .Opening.Onboarding.fourth,
+                                    type: .fourth)
         
         let fifth = OnboardingStep(name: Texts.Onboarding.FifthPage.title,
-                                    description: Texts.Onboarding.FifthPage.description,
-                                    image: .Opening.Onboarding.fifth)
+                                   description: Texts.Onboarding.FifthPage.description,
+                                   image: .Opening.Onboarding.fifth,
+                                   type: .fifth)
         
         return [first, second, third, fourth, fifth]
     }

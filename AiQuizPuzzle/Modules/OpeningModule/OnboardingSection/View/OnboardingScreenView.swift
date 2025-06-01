@@ -21,7 +21,10 @@ struct OnboardingScreenView: View {
             QuizInfoView()
         } else {
             onboardingFlow
-                .background(background)
+                .background {
+                    background
+                        .ignoresSafeArea()
+                }
         }
     }
     
@@ -169,8 +172,17 @@ struct OnboardingScreenView: View {
     }
     
     private var background: some View {
-        Color.purple
-            .ignoresSafeArea()
+        let page = viewModel.currentGradientPage(index: page.index)
+        if #available(iOS 18.0, *) {
+            return MeshGradient(
+                width: 3,
+                height: 3,
+                points: page.points,
+                colors: page.colors
+            )
+        } else {
+            return Color.purple
+        }
     }
 }
 

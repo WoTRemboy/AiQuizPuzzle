@@ -47,4 +47,10 @@ extension Color {
     enum Button {
         static let orange = Color("ButtonColorOrange")
     }
+    
+    enum GradientColors {
+        static let orange = Color("GradientOrange")
+        static let red = Color("GradientRed")
+        static let purple = Color("GradientPurple")
+    }
 }

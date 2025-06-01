@@ -15,6 +15,7 @@ final class OnboardingViewModel: NSObject, ObservableObject {
     /// A flag indicating if onboarding should be skipped (i.e., onboarding is completed).
     @AppStorage(Keys.UserDefaults.skipOnboarding) internal var skipOnboarding: Bool = false
     @Published internal var beginOnboarding: Bool = false
+    @Published internal var currentPage: OnboardingPage = .welcome
     
     /// The list of onboarding steps, initialized using `stepsSetup()`.
     private(set) var steps = OnboardingStep.stepsSetup()
@@ -30,6 +31,14 @@ final class OnboardingViewModel: NSObject, ObservableObject {
     
     internal func toggleBeginOnboarding() {
         beginOnboarding.toggle()
+        currentPage = .first
+    }
+    
+    internal func currentGradientPage(index: Int) -> OnboardingPage {
+        if !beginOnboarding {
+            return .welcome
+        }
+        return OnboardingPage(rawValue: Int8(index)) ?? .first
     }
     
     /// Determines if the given page index corresponds to the last onboarding page.
