@@ -49,8 +49,17 @@ extension Color {
     }
     
     enum GradientColors {
-        static let orange = Color("GradientOrange")
-        static let red = Color("GradientRed")
-        static let purple = Color("GradientPurple")
+        enum Onboarding {
+            static let orange = Color("GradientOrange")
+            static let red = Color("GradientRed")
+            static let purple = Color("GradientPurple")
+        }
+        
+        enum Background {
+            static let yellow = Color("BackgroundGradientYellow")
+            static let pink = Color("BackgroundGradientPink")
+            static let magenta = Color("BackgroundGradientMagenta")
+            static let blue = Color("BackgroundGradientBlue")
+        }
     }
 }
