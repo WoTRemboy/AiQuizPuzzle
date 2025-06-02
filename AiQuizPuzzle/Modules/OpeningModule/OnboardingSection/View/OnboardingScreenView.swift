@@ -31,7 +31,7 @@ struct OnboardingScreenView: View {
     private var onboardingFlow: some View {
         VStack(spacing: 0) {
             title
-                .padding(.top, 54)
+                .padding(.top, hasNotch() ? 54 : 20)
             
             if viewModel.beginOnboarding {
                 mainOnboardingContent
