@@ -154,23 +154,6 @@ struct OnboardingScreenView: View {
         .padding(.horizontal, 28)
     }
     
-    // MARK: - Terms and Policy
-    
-    /// Displays the terms of service and privacy policy acknowledgment text.
-    private var termsPolicyLabel: some View {
-        if let attributedText = try? AttributedString(markdown: Texts.Onboarding.Terms.markdown) {
-            return Text(attributedText)
-                .font(.system(size: 14))
-                .fontWeight(.medium)
-                .foregroundStyle(Color.LabelColors.labelReversed)
-        } else {
-            return Text(Texts.Onboarding.Terms.markdownError)
-                .font(.system(size: 14))
-                .fontWeight(.medium)
-                .foregroundStyle(Color.LabelColors.labelReversed)
-        }
-    }
-    
     private var background: some View {
         let page = viewModel.currentGradientPage(index: page.index)
         if #available(iOS 18.0, *) {
