@@ -40,7 +40,7 @@ struct DailyQuizCellView: View {
     
     private var playButton: some View {
         CellPlayButton(title: Texts.MainPage.Daily.play.uppercased()) {
-            
+            action()
         }
     }
 }

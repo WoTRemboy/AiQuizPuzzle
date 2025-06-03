@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct MainPageView: View {
+    @State private var showSheet: Bool = false
+    
     internal var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             DailyQuizCellView() {
-                
+                showSheet.toggle()
             }
             .padding(.horizontal, 26)
             .padding(.top)
+        }
+        .fullScreenCover(isPresented: $showSheet) {
+            QuizInfoView()
         }
         .background(background)
     }
