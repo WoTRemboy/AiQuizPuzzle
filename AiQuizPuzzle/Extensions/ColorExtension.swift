@@ -28,7 +28,7 @@ extension Color {
         static let labelPrimary = Color("LabelPrimary")
         static let labelSecondary = Color("LabelSecondary")
         static let labelTertiary = Color("LabelTertiary")
-        static let labelReversed = Color("LabelReversed")
+        static let labelWhite = Color("LabelWhite")
         static let labelBlack = Color("LabelBlack")
         static let labelGreyLight = Color("LabelGreyLight")
         static let labelGreyDark = Color("LabelGreyDark")
@@ -60,6 +60,13 @@ extension Color {
             static let pink = Color("BackgroundGradientPink")
             static let magenta = Color("BackgroundGradientMagenta")
             static let blue = Color("BackgroundGradientBlue")
+        }
+    }
+    
+    enum BackgroundColors {
+        enum Cell {
+            static let background = Color("BackgroundCellColor")
+            static let stroke = Color("BackgroundCellStroke")
         }
     }
     

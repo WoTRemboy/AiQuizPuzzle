@@ -10,8 +10,11 @@ import SwiftUI
 struct MainPageView: View {
     internal var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            Text("Hello")
-                .frame(maxWidth: .infinity)
+            DailyQuizCellView() {
+                
+            }
+            .padding(.horizontal, 26)
+            .padding(.top)
         }
         .background(background)
     }

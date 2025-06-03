@@ -65,7 +65,7 @@ struct OnboardingScreenView: View {
                  ? Texts.Onboarding.about
                  : Texts.Onboarding.welcome)
             .font(.Opening.Onboarding.title())
-            .foregroundStyle(Color.LabelColors.labelReversed)
+            .foregroundStyle(Color.LabelColors.labelWhite)
             .multilineTextAlignment(.center)
             .contentTransition(.numericText())
             
@@ -145,7 +145,7 @@ struct OnboardingScreenView: View {
             .contentTransition(.numericText())
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             
-            .foregroundColor(Color.LabelColors.labelReversed)
+            .foregroundColor(Color.LabelColors.labelWhite)
             .background(Color.Button.orange)
             .clipShape(RoundedRectangle(cornerRadius: 20))
         }

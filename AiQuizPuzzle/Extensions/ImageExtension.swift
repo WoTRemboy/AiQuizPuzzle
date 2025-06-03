@@ -24,6 +24,10 @@ extension Image {
         }
     }
     
+    enum MainPage {
+        static let dailyQuiz = Image("DailyQuizCellIcon")
+    }
+    
     enum Tabbar {
         static let home = Image("TabbarIconHome")
         static let stats = Image("TabbarIconStats")

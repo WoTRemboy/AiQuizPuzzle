@@ -59,7 +59,7 @@ struct SplashScreenView: View {
                 
                 // App title text
                 Text(texts[id])
-                    .foregroundStyle(Color.LabelColors.labelReversed)
+                    .foregroundStyle(Color.LabelColors.labelWhite)
                     .font(.Opening.SplashScreen.title())
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
