@@ -17,7 +17,7 @@ struct CustomTabBar: View {
                     TabBarItem(tab: tab, image: tab.icon)
                 }
             }
-            .frame(height: 75)
+            .frame(height: 65)
             .padding(.horizontal, 16)
             .background(background)
         }
@@ -27,6 +27,7 @@ struct CustomTabBar: View {
         Color.TabbarColors.background
             .shadow(color: .black.opacity(0.4),
                     radius: 4, y: -2)
+            .ignoresSafeArea()
     }
 }
 

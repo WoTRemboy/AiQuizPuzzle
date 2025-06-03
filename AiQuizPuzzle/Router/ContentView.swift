@@ -27,11 +27,9 @@ struct ContentView: View {
             Text("Settings")
                 .tag(TabRouter.Tab.settings)
         }
-        .safeAreaInset(edge: .bottom) {
-            VStack {
-                CustomTabBar()
-                    .environmentObject(router)
-            }
+        .overlay(alignment: .bottom) {
+            CustomTabBar()
+                .environmentObject(router)
         }
     }
 }
