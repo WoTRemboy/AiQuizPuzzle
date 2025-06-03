@@ -62,4 +62,10 @@ extension Color {
             static let blue = Color("BackgroundGradientBlue")
         }
     }
+    
+    enum TabbarColors {
+        static let selected = Color("TabbarSelected")
+        static let unselected = Color("TabbarUnselected")
+        static let background = Color("TabbarBackground")
+    }
 }

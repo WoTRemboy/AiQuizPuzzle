@@ -9,7 +9,16 @@ import SwiftUI
 
 struct MainPageView: View {
     internal var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical, showsIndicators: false) {
+            Text("Hello")
+                .frame(maxWidth: .infinity)
+        }
+        .background(background)
+    }
+    
+    private var background: some View {
+        BackgroundView()
+            .ignoresSafeArea()
     }
 }
 

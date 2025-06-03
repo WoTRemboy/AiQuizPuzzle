@@ -18,7 +18,7 @@ struct OnboardingScreenView: View {
     
     internal var body: some View {
         if viewModel.skipOnboarding {
-            QuizInfoView()
+            ContentView()
         } else {
             onboardingFlow
                 .background {
