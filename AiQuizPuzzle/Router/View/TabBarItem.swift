@@ -20,7 +20,9 @@ struct TabBarItem: View {
     
     internal var body: some View {
         Button {
-            router.selected = tab
+            withAnimation(.easeInOut(duration: 0.1)) {
+                router.selected = tab
+            }
         } label: {
             image
                 .renderingMode(.template)

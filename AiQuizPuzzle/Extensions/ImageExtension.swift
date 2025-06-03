@@ -29,6 +29,10 @@ extension Image {
         static let stats = Image("TabbarIconStats")
         static let quiz = Image("TabbarIconQuiz")
         static let settings = Image("TabbarIconSettings")
-        static let add = Image("TabbarIconAdd")
+        
+        enum AddButton {
+            static let icon = Image("TabbarIconAdd")
+            static let background = Image("TabbarBackgroundAdd")
+        }
     }
 }
