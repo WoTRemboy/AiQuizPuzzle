@@ -24,8 +24,8 @@ struct DailyQuizCellView: View {
             Spacer()
             Image.MainPage.dailyQuiz
         }
-        .padding(.vertical, 12)
-        .padding(.horizontal, 16)
+        .padding(.leading, 16)
+        .padding([.vertical, .trailing], 12)
         
         .frame(maxWidth: .infinity)
         .background(CellBackgroundView())
