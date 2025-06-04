@@ -22,7 +22,7 @@ struct CellPlayButton: View {
             action()
         } label: {
             titleLabel
-                .frame(width: 170)
+                .frame(maxWidth: .infinity)
                 .background(background)
         }
         .buttonStyle(.plain)

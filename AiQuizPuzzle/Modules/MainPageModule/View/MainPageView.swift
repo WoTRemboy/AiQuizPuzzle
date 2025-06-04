@@ -12,7 +12,7 @@ struct MainPageView: View {
     
     internal var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            LazyVStack(spacing: 32) {
+            LazyVStack(spacing: 20) {
                 cellsView
                 segmentsView
             }
@@ -44,7 +44,7 @@ struct MainPageView: View {
     }
     
     private var segmentsView: some View {
-        VStack(spacing: 16) {
+        LazyVStack(spacing: 16) {
             ScrollSegmentView()
             ScrollSegmentView()
         }

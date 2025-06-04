@@ -66,7 +66,7 @@ final class Texts {
         }
         
         enum Practice {
-            static let title = "Проработать ошибки"
+            static let title = "Ошибки"
             static let description = "Начало пути к успеху"
             static let count = "Количество"
             static let start = "Начать"

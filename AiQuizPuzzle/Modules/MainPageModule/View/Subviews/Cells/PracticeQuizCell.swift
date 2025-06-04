@@ -16,12 +16,10 @@ struct PracticeQuizCell: View {
     
     internal var body: some View {
         HStack(alignment: .top, spacing: 16) {
-            VStack(alignment: .leading, spacing: 10) {
-                title
-                description
+            VStack(alignment: .leading, spacing: 12) {
+                titleDescription
                 playButton
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
             
             divider
             count
@@ -31,6 +29,13 @@ struct PracticeQuizCell: View {
         
         .frame(maxWidth: .infinity)
         .background(CellBackgroundView())
+    }
+    
+    private var titleDescription: some View {
+        VStack(alignment: .leading, spacing: 7) {
+            title
+            description
+        }
     }
     
     private var title: some View {
@@ -69,7 +74,7 @@ struct PracticeQuizCell: View {
                 .font(.MainPage.Cell.count())
         }
         .foregroundStyle(Color.LabelColors.labelWhite)
-        .minimumScaleFactor(0.5)
+        .minimumScaleFactor(0.1)
         .lineLimit(1)
         
         .frame(width: 96)

@@ -16,14 +16,13 @@ struct DailyQuizCellView: View {
     }
     
     internal var body: some View {
-        HStack(alignment: .top) {
+        HStack(alignment: .top, spacing: 16) {
             VStack(alignment: .leading, spacing: 24) {
                 title
                 playButton
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
             
-            Image.MainPage.dailyQuiz
+            imageView
         }
         .padding(.leading, 16)
         .padding([.vertical, .trailing], 12)
@@ -37,6 +36,13 @@ struct DailyQuizCellView: View {
             .font(.MainPage.Cell.title())
             .foregroundStyle(Color.LabelColors.labelWhite)
             .minimumScaleFactor(0.7)
+    }
+    
+    private var imageView: some View {
+        Image.MainPage.dailyQuiz
+            .resizable()
+            .scaledToFit()
+            .frame(width: 118)
     }
     
     private var playButton: some View {

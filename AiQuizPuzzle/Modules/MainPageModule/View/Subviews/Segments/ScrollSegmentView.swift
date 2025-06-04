@@ -30,6 +30,7 @@ struct ScrollSegmentView: View {
                 ScrollSegmentViewCell(title: "Транспорт", image: .MainPage.dailyQuiz) {}
                 ScrollSegmentViewCell(title: "Страны", image: .MainPage.dailyQuiz) {}
             }
+            .padding(.vertical, 2)
             .padding(.horizontal, 26)
         }
     }
