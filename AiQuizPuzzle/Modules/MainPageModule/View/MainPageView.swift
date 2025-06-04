@@ -12,8 +12,15 @@ struct MainPageView: View {
     
     internal var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            DailyQuizCellView() {
-                showSheet.toggle()
+            LazyVStack(spacing: 20) {
+                DailyQuizCellView() {
+                    showSheet.toggle()
+                }
+                
+                ResumeQuizCell(name: Texts.MainPage.Resume.namePlaceholder,
+                               progress: 70.23) {
+                    
+                }
             }
             .padding(.horizontal, 26)
             .padding(.top)

@@ -1,0 +1,437 @@
+<svg width="300" height="12" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0L4 0L4 4L0 4L0 0Z" fill="#F9771B"/>
+<path d="M0 4L4 4L4 8H0L0 4Z" fill="#F9771B"/>
+<path d="M0 8H4L4 12H0L0 8Z" fill="#F9771B"/>
+<path d="M4 0L8 0L8 4H4L4 0Z" fill="#FF9245"/>
+<path d="M4 4H8V8L4 8L4 4Z" fill="#FF9245"/>
+<path d="M4 8L8 8L8 12L4 12L4 8Z" fill="#F9771B"/>
+<path d="M8 0L12 0V4L8 4L8 0Z" fill="#FF9245"/>
+<path d="M8 4L12 4L12 8H8V4Z" fill="#F9771B"/>
+<path d="M8 8H12V12H8L8 8Z" fill="#F9771B"/>
+<path d="M12 0L16 0V4L12 4V0Z" fill="#F9771B"/>
+<path d="M12 4L16 4L16 8H12L12 4Z" fill="#F9771B"/>
+<path d="M12 8H16V12H12V8Z" fill="#F9771B"/>
+<path d="M16 0L20 0V4L16 4V0Z" fill="#FF9245"/>
+<path d="M16 4L20 4V8L16 8L16 4Z" fill="#FF9245"/>
+<path d="M16 8L20 8L20 12L16 12V8Z" fill="#F9771B"/>
+<path d="M20 0L24 0V4H20V0Z" fill="#FF9245"/>
+<path d="M20 4H24V8H20V4Z" fill="#F9771B"/>
+<path d="M20 8H24L24 12H20L20 8Z" fill="#F9771B"/>
+<path d="M24 4L28 4V8L24 8V4Z" fill="#F9771B"/>
+<path d="M24 8L28 8L28 12L24 12L24 8Z" fill="#F9771B"/>
+<path d="M28 0L32 0V4L28 4V0Z" fill="#FF9245"/>
+<path d="M24 0L28 0V4L24 4V0Z" fill="#FF9245"/>
+<path d="M28 4L32 4V8H28V4Z" fill="#F9771B"/>
+<path d="M28 8H32L32 12H28L28 8Z" fill="#F9771B"/>
+<path d="M32 0L36 0V4L32 4V0Z" fill="#FF9245"/>
+<path d="M32 4L36 4V8H32V4Z" fill="#FF9245"/>
+<path d="M32 8H36V12H32L32 8Z" fill="#F9771B"/>
+<path d="M36 0L40 0V4H36V0Z" fill="#F9771B"/>
+<path d="M36 4H40V8L36 8V4Z" fill="#F9771B"/>
+<path d="M36 8L40 8V12L36 12V8Z" fill="#F9771B"/>
+<path d="M40 4L44 4V8H40V4Z" fill="#F9771B"/>
+<path d="M40 8H44V12H40V8Z" fill="#F9771B"/>
+<path d="M44 0L48 0V4L44 4V0Z" fill="#FF9245"/>
+<path d="M40 0L44 0V4L40 4V0Z" fill="#FF9245"/>
+<path d="M44 4L48 4V8H44V4Z" fill="#FF9245"/>
+<path d="M44 8H48V12H44V8Z" fill="#F9771B"/>
+<path d="M48 0L52 0V4H48V0Z" fill="#F9771B"/>
+<path d="M48 4H52V8L48 8V4Z" fill="#F9771B"/>
+<path d="M48 8L52 8V12L48 12V8Z" fill="#F9771B"/>
+<path d="M52 0L56 0V4L52 4V0Z" fill="#FF9245"/>
+<path d="M52 4L56 4V8H52V4Z" fill="#FF9245"/>
+<path d="M52 8H56V12H52V8Z" fill="#F9771B"/>
+<path d="M56 4L60 4V8H56V4Z" fill="#F9771B"/>
+<path d="M56 8H60V12H56V8Z" fill="#F9771B"/>
+<path d="M60 0L64 0V4L60 4V0Z" fill="#F9771B"/>
+<path d="M56 0L60 0V4L56 4V0Z" fill="#FF9245"/>
+<path d="M60 4L64 4V8L60 8V4Z" fill="#F9771B"/>
+<path d="M60 8L64 8V12L60 12V8Z" fill="#F9771B"/>
+<path d="M64 0L68 0V4H64V0Z" fill="#FF9245"/>
+<path d="M64 4H68V8H64V4Z" fill="#FF9245"/>
+<path d="M64 8H68V12H64V8Z" fill="#F9771B"/>
+<path d="M68 0L72 0V4L68 4V0Z" fill="#FF9245"/>
+<path d="M68 4L72 4V8L68 8V4Z" fill="#F9771B"/>
+<path d="M68 8L72 8V12L68 12V8Z" fill="#F9771B"/>
+<path d="M72 4L76 4V8H72V4Z" fill="#F9771B"/>
+<path d="M72 8H76V12H72V8Z" fill="#F9771B"/>
+<path d="M76 0L80 0V4H76V0Z" fill="#FF9245"/>
+<path d="M72 0L76 0V4L72 4V0Z" fill="#FF9245"/>
+<path d="M76 4H80V8H76V4Z" fill="#F9771B"/>
+<path d="M76 8H80V12H76V8Z" fill="#F9771B"/>
+<path d="M80 0L84 0V4L80 4V0Z" fill="#FF9245"/>
+<path d="M80 4L84 4V8L80 8V4Z" fill="#FF9245"/>
+<path d="M80 8L84 8V12L80 12V8Z" fill="#F9771B"/>
+<path d="M84 0L88 0V4L84 4V0Z" fill="#F9771B"/>
+<path d="M84 4L88 4V8H84V4Z" fill="#F9771B"/>
+<path d="M84 8H88V12H84V8Z" fill="#F9771B"/>
+<path d="M88 4L92 4V8H88V4Z" fill="#F9771B"/>
+<path d="M88 8H92V12H88V8Z" fill="#F9771B"/>
+<path d="M92 0L96 0V4H92V0Z" fill="#FF9245"/>
+<path d="M88 0L92 0V4L88 4V0Z" fill="#FF9245"/>
+<path d="M92 4H96V8L92 8V4Z" fill="#FF9245"/>
+<path d="M92 8L96 8V12L92 12V8Z" fill="#F9771B"/>
+<path d="M96 0L100 0V4L96 4V0Z" fill="#F9771B"/>
+<path d="M96 4L100 4V8H96V4Z" fill="#F9771B"/>
+<path d="M96 8H100V12H96V8Z" fill="#F9771B"/>
+<path d="M100 0L104 0V4L100 4V0Z" fill="#FF9245"/>
+<path d="M100 4L104 4V8H100V4Z" fill="#FF9245"/>
+<path d="M100 8H104V12H100V8Z" fill="#F9771B"/>
+<path d="M104 4L108 4V8L104 8V4Z" fill="#F9771B"/>
+<path d="M104 8L108 8V12L104 12V8Z" fill="#F9771B"/>
+<path d="M108 0L112 0V4H108V0Z" fill="#F9771B"/>
+<path d="M104 0L108 0V4L104 4V0Z" fill="#FF9245"/>
+<path d="M108 4H112V8H108V4Z" fill="#F9771B"/>
+<path d="M108 8H112V12H108V8Z" fill="#F9771B"/>
+<path d="M112 0L116 0V4L112 4V0Z" fill="#FF9245"/>
+<path d="M112 4L116 4V8L112 8V4Z" fill="#FF9245"/>
+<path d="M112 8L116 8V12L112 12V8Z" fill="#F9771B"/>
+<path d="M116 0L120 0V4L116 4V0Z" fill="#FF9245"/>
+<path d="M116 4L120 4V8H116V4Z" fill="#F9771B"/>
+<path d="M116 8H120V12H116V8Z" fill="#F9771B"/>
+<path d="M120 4H124V8H120V4Z" fill="#F9771B"/>
+<path d="M120 8H124V12H120V8Z" fill="#F9771B"/>
+<path d="M124 0L128 0V4L124 4V0Z" fill="#FF9245"/>
+<path d="M120 0L124 0V4H120V0Z" fill="#FF9245"/>
+<path d="M124 4L128 4V8L124 8V4Z" fill="#F9771B"/>
+<path d="M124 8L128 8V12L124 12V8Z" fill="#F9771B"/>
+<path d="M128 0L132 0V4L128 4V0Z" fill="#FF9245"/>
+<path d="M128 4L132 4V8H128V4Z" fill="#FF9245"/>
+<path d="M128 8H132V12H128V8Z" fill="#F9771B"/>
+<path d="M132 0L136 0V4L132 4V0Z" fill="#F9771B"/>
+<path d="M132 4L136 4V8H132V4Z" fill="#F9771B"/>
+<path d="M132 8H136V12H132V8Z" fill="#F9771B"/>
+<path d="M136 4H140V8L136 8V4Z" fill="#F9771B"/>
+<path d="M136 8L140 8V12L136 12V8Z" fill="#F9771B"/>
+<path d="M140 0L144 0V4L140 4V0Z" fill="#FF9245"/>
+<path d="M136 0L140 0V4H136V0Z" fill="#FF9245"/>
+<path d="M140 4L144 4V8H140V4Z" fill="#FF9245"/>
+<path d="M140 8H144V12H140V8Z" fill="#F9771B"/>
+<path d="M4 0L8 0L8 4H4L4 0Z" fill="#FF9245"/>
+<path d="M4 4H8V8L4 8L4 4Z" fill="#FF9245"/>
+<path d="M4 8L8 8L8 12L4 12L4 8Z" fill="#F9771B"/>
+<path d="M8 0L12 0V4L8 4L8 0Z" fill="#FF9245"/>
+<path d="M8 4L12 4L12 8H8V4Z" fill="#F9771B"/>
+<path d="M8 8H12V12H8L8 8Z" fill="#E8680D"/>
+<path d="M12 0L16 0V4L12 4V0Z" fill="#F9771B"/>
+<path d="M12 4L16 4L16 8H12L12 4Z" fill="#E8680D"/>
+<path d="M12 8H16V12H12V8Z" fill="#F9771B"/>
+<path d="M16 0L20 0V4L16 4V0Z" fill="#FF9245"/>
+<path d="M16 4L20 4V8L16 8L16 4Z" fill="#FF9245"/>
+<path d="M16 8L20 8L20 12L16 12V8Z" fill="#F9771B"/>
+<path d="M20 0L24 0V4H20V0Z" fill="#FF9245"/>
+<path d="M20 4H24V8H20V4Z" fill="#F9771B"/>
+<path d="M20 8H24L24 12H20L20 8Z" fill="#F9771B"/>
+<path d="M24 4L28 4V8L24 8V4Z" fill="#F9771B"/>
+<path d="M24 8L28 8L28 12L24 12L24 8Z" fill="#F9771B"/>
+<path d="M28 0L32 0V4L28 4V0Z" fill="#FF9245"/>
+<path d="M24 0L28 0V4L24 4V0Z" fill="#FF9245"/>
+<path d="M28 4L32 4V8H28V4Z" fill="#F9771B"/>
+<path d="M28 8H32L32 12H28L28 8Z" fill="#F9771B"/>
+<path d="M32 0L36 0V4L32 4V0Z" fill="#FF9245"/>
+<path d="M32 4L36 4V8H32V4Z" fill="#FF9245"/>
+<path d="M32 8H36V12H32L32 8Z" fill="#F9771B"/>
+<path d="M36 0L40 0V4H36V0Z" fill="#F9771B"/>
+<path d="M36 4H40V8L36 8V4Z" fill="#F9771B"/>
+<path d="M36 8L40 8V12L36 12V8Z" fill="#E8680D"/>
+<path d="M40 4L44 4V8H40V4Z" fill="#F9771B"/>
+<path d="M40 8H44V12H40V8Z" fill="#E8680D"/>
+<path d="M44 0L48 0V4L44 4V0Z" fill="#FF9245"/>
+<path d="M40 0L44 0V4L40 4V0Z" fill="#FF9245"/>
+<path d="M44 4L48 4V8H44V4Z" fill="#FF9245"/>
+<path d="M44 8H48V12H44V8Z" fill="#F9771B"/>
+<path d="M48 0L52 0V4H48V0Z" fill="#F9771B"/>
+<path d="M48 4H52V8L48 8V4Z" fill="#F9771B"/>
+<path d="M48 8L52 8V12L48 12V8Z" fill="#F9771B"/>
+<path d="M52 0L56 0V4L52 4V0Z" fill="#FF9245"/>
+<path d="M52 4L56 4V8H52V4Z" fill="#FF9245"/>
+<path d="M52 8H56V12H52V8Z" fill="#F9771B"/>
+<path d="M56 4L60 4V8H56V4Z" fill="#F9771B"/>
+<path d="M56 8H60V12H56V8Z" fill="#F9771B"/>
+<path d="M60 0L64 0V4L60 4V0Z" fill="#F9771B"/>
+<path d="M56 0L60 0V4L56 4V0Z" fill="#FF9245"/>
+<path d="M60 4L64 4V8L60 8V4Z" fill="#F9771B"/>
+<path d="M60 8L64 8V12L60 12V8Z" fill="#E8680D"/>
+<path d="M64 0L68 0V4H64V0Z" fill="#FF9245"/>
+<path d="M64 4H68V8H64V4Z" fill="#FF9245"/>
+<path d="M64 8H68V12H64V8Z" fill="#F9771B"/>
+<path d="M68 0L72 0V4L68 4V0Z" fill="#FF9245"/>
+<path d="M68 4L72 4V8L68 8V4Z" fill="#F9771B"/>
+<path d="M68 8L72 8V12L68 12V8Z" fill="#F9771B"/>
+<path d="M72 4L76 4V8H72V4Z" fill="#F9771B"/>
+<path d="M72 8H76V12H72V8Z" fill="#E8680D"/>
+<path d="M76 0L80 0V4H76V0Z" fill="#FF9245"/>
+<path d="M72 0L76 0V4L72 4V0Z" fill="#FF9245"/>
+<path d="M76 4H80V8H76V4Z" fill="#F9771B"/>
+<path d="M76 8H80V12H76V8Z" fill="#F9771B"/>
+<path d="M80 0L84 0V4L80 4V0Z" fill="#FF9245"/>
+<path d="M80 4L84 4V8L80 8V4Z" fill="#FF9245"/>
+<path d="M80 8L84 8V12L80 12V8Z" fill="#F9771B"/>
+<path d="M84 0L88 0V4L84 4V0Z" fill="#F9771B"/>
+<path d="M84 4L88 4V8H84V4Z" fill="#F9771B"/>
+<path d="M84 8H88V12H84V8Z" fill="#F9771B"/>
+<path d="M88 4L92 4V8H88V4Z" fill="#F9771B"/>
+<path d="M88 8H92V12H88V8Z" fill="#E8680D"/>
+<path d="M92 0L96 0V4H92V0Z" fill="#FF9245"/>
+<path d="M88 0L92 0V4L88 4V0Z" fill="#FF9245"/>
+<path d="M92 4H96V8L92 8V4Z" fill="#FF9245"/>
+<path d="M92 8L96 8V12L92 12V8Z" fill="#F9771B"/>
+<path d="M96 0L100 0V4L96 4V0Z" fill="#F9771B"/>
+<path d="M96 4L100 4V8H96V4Z" fill="#E8680D"/>
+<path d="M96 8H100V12H96V8Z" fill="#F9771B"/>
+<path d="M100 0L104 0V4L100 4V0Z" fill="#FF9245"/>
+<path d="M100 4L104 4V8H100V4Z" fill="#FF9245"/>
+<path d="M100 8H104V12H100V8Z" fill="#F9771B"/>
+<path d="M104 4L108 4V8L104 8V4Z" fill="#F9771B"/>
+<path d="M104 8L108 8V12L104 12V8Z" fill="#F9771B"/>
+<path d="M108 0L112 0V4H108V0Z" fill="#F9771B"/>
+<path d="M104 0L108 0V4L104 4V0Z" fill="#FF9245"/>
+<path d="M108 4H112V8H108V4Z" fill="#E8680D"/>
+<path d="M108 8H112V12H108V8Z" fill="#F9771B"/>
+<path d="M112 0L116 0V4L112 4V0Z" fill="#FF9245"/>
+<path d="M112 4L116 4V8L112 8V4Z" fill="#FF9245"/>
+<path d="M112 8L116 8V12L112 12V8Z" fill="#E8680D"/>
+<path d="M116 0L120 0V4L116 4V0Z" fill="#FF9245"/>
+<path d="M116 4L120 4V8H116V4Z" fill="#F9771B"/>
+<path d="M116 8H120V12H116V8Z" fill="#F9771B"/>
+<path d="M120 4H124V8H120V4Z" fill="#F9771B"/>
+<path d="M120 8H124V12H120V8Z" fill="#F9771B"/>
+<path d="M124 0L128 0V4L124 4V0Z" fill="#FF9245"/>
+<path d="M120 0L124 0V4H120V0Z" fill="#FF9245"/>
+<path d="M124 4L128 4V8L124 8V4Z" fill="#F9771B"/>
+<path d="M124 8L128 8V12L124 12V8Z" fill="#E8680D"/>
+<path d="M128 0L132 0V4L128 4V0Z" fill="#FF9245"/>
+<path d="M128 4L132 4V8H128V4Z" fill="#FF9245"/>
+<path d="M128 8H132V12H128V8Z" fill="#F9771B"/>
+<path d="M132 0L136 0V4L132 4V0Z" fill="#F9771B"/>
+<path d="M132 4L136 4V8H132V4Z" fill="#E8680D"/>
+<path d="M132 8H136V12H132V8Z" fill="#E8680D"/>
+<path d="M136 4H140V8L136 8V4Z" fill="#F9771B"/>
+<path d="M136 8L140 8V12L136 12V8Z" fill="#F9771B"/>
+<path d="M140 0L144 0V4L140 4V0Z" fill="#FF9245"/>
+<path d="M136 0L140 0V4H136V0Z" fill="#FF9245"/>
+<path d="M140 4L144 4V8H140V4Z" fill="#FF9245"/>
+<path d="M140 8H144V12H140V8Z" fill="#F9771B"/>
+<path d="M144 0L148 0V4L144 4V0Z" fill="#F9771B"/>
+<path d="M144 4L148 4V8H144V4Z" fill="#F9771B"/>
+<path d="M144 8H148V12H144V8Z" fill="#F9771B"/>
+<path d="M148 0L152 0V4L148 4V0Z" fill="#FF9245"/>
+<path d="M148 4L152 4V8L148 8V4Z" fill="#FF9245"/>
+<path d="M148 8L152 8V12L148 12V8Z" fill="#F9771B"/>
+<path d="M152 0L156 0V4H152V0Z" fill="#FF9245"/>
+<path d="M152 4H156V8H152V4Z" fill="#F9771B"/>
+<path d="M152 8H156V12H152V8Z" fill="#F9771B"/>
+<path d="M156 0L160 0V4L156 4V0Z" fill="#F9771B"/>
+<path d="M156 4L160 4V8H156V4Z" fill="#F9771B"/>
+<path d="M156 8H160V12H156V8Z" fill="#F9771B"/>
+<path d="M160 0L164 0V4L160 4V0Z" fill="#FF9245"/>
+<path d="M160 4L164 4V8L160 8V4Z" fill="#FF9245"/>
+<path d="M160 8L164 8V12L160 12V8Z" fill="#F9771B"/>
+<path d="M164 0L168 0V4H164V0Z" fill="#FF9245"/>
+<path d="M164 4H168V8H164V4Z" fill="#F9771B"/>
+<path d="M164 8H168V12H164V8Z" fill="#F9771B"/>
+<path d="M168 4L172 4V8L168 8V4Z" fill="#F9771B"/>
+<path d="M168 8L172 8V12L168 12V8Z" fill="#F9771B"/>
+<path d="M172 0L176 0V4L172 4V0Z" fill="#FF9245"/>
+<path d="M168 0L172 0V4L168 4V0Z" fill="#FF9245"/>
+<path d="M172 4L176 4V8H172V4Z" fill="#F9771B"/>
+<path d="M172 8H176V12H172V8Z" fill="#F9771B"/>
+<path d="M176 0L180 0V4L176 4V0Z" fill="#FF9245"/>
+<path d="M176 4L180 4V8H176V4Z" fill="#FF9245"/>
+<path d="M176 8H180V12H176V8Z" fill="#F9771B"/>
+<path d="M180 0L184 0V4H180V0Z" fill="#F9771B"/>
+<path d="M180 4H184V8L180 8V4Z" fill="#F9771B"/>
+<path d="M180 8L184 8V12L180 12V8Z" fill="#F9771B"/>
+<path d="M184 4L188 4V8H184V4Z" fill="#F9771B"/>
+<path d="M184 8H188V12H184V8Z" fill="#F9771B"/>
+<path d="M188 0L192 0V4L188 4V0Z" fill="#FF9245"/>
+<path d="M184 0L188 0V4L184 4V0Z" fill="#FF9245"/>
+<path d="M188 4L192 4V8H188V4Z" fill="#FF9245"/>
+<path d="M188 8H192V12H188V8Z" fill="#F9771B"/>
+<path d="M192 0L196 0V4H192V0Z" fill="#F9771B"/>
+<path d="M192 4H196V8L192 8V4Z" fill="#F9771B"/>
+<path d="M192 8L196 8V12L192 12V8Z" fill="#F9771B"/>
+<path d="M196 0L200 0V4L196 4V0Z" fill="#FF9245"/>
+<path d="M196 4L200 4V8H196V4Z" fill="#FF9245"/>
+<path d="M196 8H200V12H196V8Z" fill="#F9771B"/>
+<path d="M200 4L204 4V8H200V4Z" fill="#F9771B"/>
+<path d="M200 8H204V12H200V8Z" fill="#F9771B"/>
+<path d="M204 0L208 0V4L204 4V0Z" fill="#F9771B"/>
+<path d="M200 0L204 0V4L200 4V0Z" fill="#FF9245"/>
+<path d="M204 4L208 4V8L204 8V4Z" fill="#F9771B"/>
+<path d="M204 8L208 8V12L204 12V8Z" fill="#F9771B"/>
+<path d="M208 0L212 0V4H208V0Z" fill="#FF9245"/>
+<path d="M208 4H212V8H208V4Z" fill="#FF9245"/>
+<path d="M208 8H212V12H208V8Z" fill="#F9771B"/>
+<path d="M212 0L216 0V4L212 4V0Z" fill="#FF9245"/>
+<path d="M212 4L216 4V8L212 8V4Z" fill="#F9771B"/>
+<path d="M212 8L216 8V12L212 12V8Z" fill="#F9771B"/>
+<path d="M216 4L220 4V8H216V4Z" fill="#F9771B"/>
+<path d="M216 8H220V12H216V8Z" fill="#F9771B"/>
+<path d="M220 0L224 0V4L220 4V0Z" fill="#FF9245"/>
+<path d="M216 0L220 0V4L216 4V0Z" fill="#FF9245"/>
+<path d="M220 4L224 4V8H220V4Z" fill="#F9771B"/>
+<path d="M220 8H224V12H220V8Z" fill="#F9771B"/>
+<path d="M224 0L228 0V4H224V0Z" fill="#FF9245"/>
+<path d="M224 4H228V8L224 8V4Z" fill="#FF9245"/>
+<path d="M224 8L228 8V12L224 12V8Z" fill="#F9771B"/>
+<path d="M228 0L232 0V4L228 4V0Z" fill="#F9771B"/>
+<path d="M228 4L232 4V8H228V4Z" fill="#F9771B"/>
+<path d="M228 8H232V12H228V8Z" fill="#F9771B"/>
+<path d="M232 4L236 4V8H232V4Z" fill="#F9771B"/>
+<path d="M232 8H236V12H232V8Z" fill="#F9771B"/>
+<path d="M236 0L240 0V4H236V0Z" fill="#FF9245"/>
+<path d="M232 0L236 0V4L232 4V0Z" fill="#FF9245"/>
+<path d="M236 4H240V8L236 8V4Z" fill="#FF9245"/>
+<path d="M236 8L240 8V12L236 12V8Z" fill="#F9771B"/>
+<path d="M240 0L244 0V4L240 4V0Z" fill="#F9771B"/>
+<path d="M240 4L244 4V8H240V4Z" fill="#F9771B"/>
+<path d="M240 8H244V12H240V8Z" fill="#F9771B"/>
+<path d="M244 0L248 0V4L244 4V0Z" fill="#FF9245"/>
+<path d="M244 4L248 4V8H244V4Z" fill="#FF9245"/>
+<path d="M244 8H248V12H244V8Z" fill="#F9771B"/>
+<path d="M248 4L252 4V8L248 8V4Z" fill="#F9771B"/>
+<path d="M248 8L252 8V12L248 12V8Z" fill="#F9771B"/>
+<path d="M252 0L256 0V4H252V0Z" fill="#F9771B"/>
+<path d="M248 0L252 0V4L248 4V0Z" fill="#FF9245"/>
+<path d="M252 4H256V8H252V4Z" fill="#F9771B"/>
+<path d="M252 8H256V12H252V8Z" fill="#F9771B"/>
+<path d="M256 0L260 0V4L256 4V0Z" fill="#FF9245"/>
+<path d="M256 4L260 4V8L256 8V4Z" fill="#FF9245"/>
+<path d="M256 8L260 8V12L256 12V8Z" fill="#F9771B"/>
+<path d="M260 0L264 0V4L260 4V0Z" fill="#FF9245"/>
+<path d="M260 4L264 4V8H260V4Z" fill="#F9771B"/>
+<path d="M260 8H264V12H260V8Z" fill="#F9771B"/>
+<path d="M264 4L268 4V8H264V4Z" fill="#F9771B"/>
+<path d="M264 8H268V12H264V8Z" fill="#F9771B"/>
+<path d="M268 0L272 0V4H268V0Z" fill="#FF9245"/>
+<path d="M264 0L268 0V4L264 4V0Z" fill="#FF9245"/>
+<path d="M268 4H272V8L268 8V4Z" fill="#F9771B"/>
+<path d="M268 8L272 8V12L268 12V8Z" fill="#F9771B"/>
+<path d="M272 0L276 0V4L272 4V0Z" fill="#FF9245"/>
+<path d="M272 4L276 4V8H272V4Z" fill="#FF9245"/>
+<path d="M272 8H276V12H272V8Z" fill="#F9771B"/>
+<path d="M276 0L280 0V4L276 4V0Z" fill="#F9771B"/>
+<path d="M276 4L280 4V8H276V4Z" fill="#F9771B"/>
+<path d="M276 8H280V12H276V8Z" fill="#F9771B"/>
+<path d="M280 4H284V8L280 8V4Z" fill="#F9771B"/>
+<path d="M280 8L284 8V12L280 12V8Z" fill="#F9771B"/>
+<path d="M284 0L288 0V4L284 4V0Z" fill="#FF9245"/>
+<path d="M280 0L284 0V4H280V0Z" fill="#FF9245"/>
+<path d="M284 4L288 4V8H284V4Z" fill="#FF9245"/>
+<path d="M284 8H288V12H284V8Z" fill="#F9771B"/>
+<path d="M148 0L152 0V4L148 4V0Z" fill="#FF9245"/>
+<path d="M148 4L152 4V8L148 8V4Z" fill="#FF9245"/>
+<path d="M148 8L152 8V12L148 12V8Z" fill="#F9771B"/>
+<path d="M152 0L156 0V4H152V0Z" fill="#FF9245"/>
+<path d="M152 4H156V8H152V4Z" fill="#F9771B"/>
+<path d="M152 8H156V12H152V8Z" fill="#E8680D"/>
+<path d="M156 0L160 0V4L156 4V0Z" fill="#F9771B"/>
+<path d="M156 4L160 4V8H156V4Z" fill="#E8680D"/>
+<path d="M156 8H160V12H156V8Z" fill="#F9771B"/>
+<path d="M160 0L164 0V4L160 4V0Z" fill="#FF9245"/>
+<path d="M160 4L164 4V8L160 8V4Z" fill="#FF9245"/>
+<path d="M160 8L164 8V12L160 12V8Z" fill="#F9771B"/>
+<path d="M164 0L168 0V4H164V0Z" fill="#FF9245"/>
+<path d="M164 4H168V8H164V4Z" fill="#F9771B"/>
+<path d="M164 8H168V12H164V8Z" fill="#F9771B"/>
+<path d="M168 4L172 4V8L168 8V4Z" fill="#F9771B"/>
+<path d="M168 8L172 8V12L168 12V8Z" fill="#F9771B"/>
+<path d="M172 0L176 0V4L172 4V0Z" fill="#FF9245"/>
+<path d="M168 0L172 0V4L168 4V0Z" fill="#FF9245"/>
+<path d="M172 4L176 4V8H172V4Z" fill="#F9771B"/>
+<path d="M172 8H176V12H172V8Z" fill="#F9771B"/>
+<path d="M176 0L180 0V4L176 4V0Z" fill="#FF9245"/>
+<path d="M176 4L180 4V8H176V4Z" fill="#FF9245"/>
+<path d="M176 8H180V12H176V8Z" fill="#F9771B"/>
+<path d="M180 0L184 0V4H180V0Z" fill="#F9771B"/>
+<path d="M180 4H184V8L180 8V4Z" fill="#F9771B"/>
+<path d="M180 8L184 8V12L180 12V8Z" fill="#E8680D"/>
+<path d="M184 4L188 4V8H184V4Z" fill="#F9771B"/>
+<path d="M184 8H188V12H184V8Z" fill="#E8680D"/>
+<path d="M188 0L192 0V4L188 4V0Z" fill="#FF9245"/>
+<path d="M184 0L188 0V4L184 4V0Z" fill="#FF9245"/>
+<path d="M188 4L192 4V8H188V4Z" fill="#FF9245"/>
+<path d="M188 8H192V12H188V8Z" fill="#F9771B"/>
+<path d="M192 0L196 0V4H192V0Z" fill="#F9771B"/>
+<path d="M192 4H196V8L192 8V4Z" fill="#F9771B"/>
+<path d="M192 8L196 8V12L192 12V8Z" fill="#F9771B"/>
+<path d="M196 0L200 0V4L196 4V0Z" fill="#FF9245"/>
+<path d="M196 4L200 4V8H196V4Z" fill="#FF9245"/>
+<path d="M196 8H200V12H196V8Z" fill="#F9771B"/>
+<path d="M200 4L204 4V8H200V4Z" fill="#F9771B"/>
+<path d="M200 8H204V12H200V8Z" fill="#F9771B"/>
+<path d="M204 0L208 0V4L204 4V0Z" fill="#F9771B"/>
+<path d="M200 0L204 0V4L200 4V0Z" fill="#FF9245"/>
+<path d="M204 4L208 4V8L204 8V4Z" fill="#F9771B"/>
+<path d="M204 8L208 8V12L204 12V8Z" fill="#E8680D"/>
+<path d="M208 0L212 0V4H208V0Z" fill="#FF9245"/>
+<path d="M208 4H212V8H208V4Z" fill="#FF9245"/>
+<path d="M208 8H212V12H208V8Z" fill="#F9771B"/>
+<path d="M212 0L216 0V4L212 4V0Z" fill="#FF9245"/>
+<path d="M212 4L216 4V8L212 8V4Z" fill="#F9771B"/>
+<path d="M212 8L216 8V12L212 12V8Z" fill="#F9771B"/>
+<path d="M216 4L220 4V8H216V4Z" fill="#F9771B"/>
+<path d="M216 8H220V12H216V8Z" fill="#E8680D"/>
+<path d="M220 0L224 0V4L220 4V0Z" fill="#FF9245"/>
+<path d="M216 0L220 0V4L216 4V0Z" fill="#FF9245"/>
+<path d="M220 4L224 4V8H220V4Z" fill="#F9771B"/>
+<path d="M220 8H224V12H220V8Z" fill="#F9771B"/>
+<path d="M224 0L228 0V4H224V0Z" fill="#FF9245"/>
+<path d="M224 4H228V8L224 8V4Z" fill="#FF9245"/>
+<path d="M224 8L228 8V12L224 12V8Z" fill="#F9771B"/>
+<path d="M228 0L232 0V4L228 4V0Z" fill="#F9771B"/>
+<path d="M228 4L232 4V8H228V4Z" fill="#F9771B"/>
+<path d="M228 8H232V12H228V8Z" fill="#F9771B"/>
+<path d="M232 4L236 4V8H232V4Z" fill="#F9771B"/>
+<path d="M232 8H236V12H232V8Z" fill="#E8680D"/>
+<path d="M236 0L240 0V4H236V0Z" fill="#FF9245"/>
+<path d="M232 0L236 0V4L232 4V0Z" fill="#FF9245"/>
+<path d="M236 4H240V8L236 8V4Z" fill="#FF9245"/>
+<path d="M236 8L240 8V12L236 12V8Z" fill="#F9771B"/>
+<path d="M240 0L244 0V4L240 4V0Z" fill="#F9771B"/>
+<path d="M240 4L244 4V8H240V4Z" fill="#E8680D"/>
+<path d="M240 8H244V12H240V8Z" fill="#F9771B"/>
+<path d="M244 0L248 0V4L244 4V0Z" fill="#FF9245"/>
+<path d="M244 4L248 4V8H244V4Z" fill="#FF9245"/>
+<path d="M244 8H248V12H244V8Z" fill="#F9771B"/>
+<path d="M248 4L252 4V8L248 8V4Z" fill="#F9771B"/>
+<path d="M248 8L252 8V12L248 12V8Z" fill="#F9771B"/>
+<path d="M252 0L256 0V4H252V0Z" fill="#F9771B"/>
+<path d="M248 0L252 0V4L248 4V0Z" fill="#FF9245"/>
+<path d="M252 4H256V8H252V4Z" fill="#E8680D"/>
+<path d="M252 8H256V12H252V8Z" fill="#F9771B"/>
+<path d="M256 0L260 0V4L256 4V0Z" fill="#FF9245"/>
+<path d="M256 4L260 4V8L256 8V4Z" fill="#FF9245"/>
+<path d="M256 8L260 8V12L256 12V8Z" fill="#E8680D"/>
+<path d="M260 0L264 0V4L260 4V0Z" fill="#FF9245"/>
+<path d="M260 4L264 4V8H260V4Z" fill="#F9771B"/>
+<path d="M260 8H264V12H260V8Z" fill="#F9771B"/>
+<path d="M264 4L268 4V8H264V4Z" fill="#F9771B"/>
+<path d="M264 8H268V12H264V8Z" fill="#F9771B"/>
+<path d="M268 0L272 0V4H268V0Z" fill="#FF9245"/>
+<path d="M264 0L268 0V4L264 4V0Z" fill="#FF9245"/>
+<path d="M268 4H272V8L268 8V4Z" fill="#F9771B"/>
+<path d="M268 8L272 8V12L268 12V8Z" fill="#E8680D"/>
+<path d="M272 0L276 0V4L272 4V0Z" fill="#FF9245"/>
+<path d="M272 4L276 4V8H272V4Z" fill="#FF9245"/>
+<path d="M272 8H276V12H272V8Z" fill="#F9771B"/>
+<path d="M276 0L280 0V4L276 4V0Z" fill="#F9771B"/>
+<path d="M276 4L280 4V8H276V4Z" fill="#E8680D"/>
+<path d="M276 8H280V12H276V8Z" fill="#E8680D"/>
+<path d="M280 4H284V8L280 8V4Z" fill="#F9771B"/>
+<path d="M280 8L284 8V12L280 12V8Z" fill="#F9771B"/>
+<path d="M284 0L288 0V4L284 4V0Z" fill="#FF9245"/>
+<path d="M280 0L284 0V4H280V0Z" fill="#FF9245"/>
+<path d="M284 4L288 4V8H284V4Z" fill="#FF9245"/>
+<path d="M284 8H288V12H284V8Z" fill="#F9771B"/>
+<path d="M288 0L292 0V4L288 4V0Z" fill="#F9771B"/>
+<path d="M288 4L292 4V8H288V4Z" fill="#F9771B"/>
+<path d="M288 8H292V12H288V8Z" fill="#F9771B"/>
+<path d="M292 0L296 0V4L292 4V0Z" fill="#FF9245"/>
+<path d="M292 4L296 4V8L292 8V4Z" fill="#FF9245"/>
+<path d="M296 0L300 0V4H296V0Z" fill="#FF9245"/>
+<path d="M296 4H300V8H296V4Z" fill="#F9771B"/>
+<path d="M296 8H300V12H296V8Z" fill="#F9771B"/>
+<path d="M292 8L296 8V12L292 12V8Z" fill="#F9771B"/>
+</svg>

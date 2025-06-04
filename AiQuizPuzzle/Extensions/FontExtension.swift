@@ -43,8 +43,16 @@ extension Font {
                 Font.custom("EpilepsySans", size: 20)
             }
             
+            static func details() -> Font? {
+                Font.custom("EpilepsySans", size: 15)
+            }
+            
             static func button() -> Font? {
                 Font.custom("EpilepsySansBold", size: 30)
+            }
+            
+            static func progress() -> Font? {
+                Font.custom("EpilepsySansBold", size: 40)
             }
         }
     }
