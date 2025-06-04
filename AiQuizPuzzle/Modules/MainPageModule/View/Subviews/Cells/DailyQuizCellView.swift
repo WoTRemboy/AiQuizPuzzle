@@ -17,8 +17,8 @@ struct DailyQuizCellView: View {
     
     internal var body: some View {
         HStack(alignment: .top, spacing: 16) {
-            VStack(alignment: .leading, spacing: 24) {
-                title
+            VStack(alignment: .leading, spacing: 12) {
+                titleDetails
                 playButton
             }
             
@@ -31,11 +31,25 @@ struct DailyQuizCellView: View {
         .background(CellBackgroundView())
     }
     
-    private var title: some View {
+    private var titleDetails: some View {
+        VStack(alignment: .leading, spacing: 7) {
+            titleLabel
+            detailsLabel
+        }
+    }
+    
+    private var titleLabel: some View {
         Text(Texts.MainPage.Daily.title)
             .font(.MainPage.Cell.title())
             .foregroundStyle(Color.LabelColors.labelWhite)
             .minimumScaleFactor(0.7)
+    }
+    
+    private var detailsLabel: some View {
+        Text(Texts.MainPage.Daily.details)
+            .font(.MainPage.Cell.details())
+            .foregroundStyle(Color.LabelColors.labelDetails)
+            .lineLimit(1)
     }
     
     private var imageView: some View {

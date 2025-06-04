@@ -57,6 +57,7 @@ final class Texts {
     enum MainPage {
         enum Daily {
             static let title = "Ежедневный тест"
+            static let details = "Детали режима"
             static let play = "Играть"
         }
         
