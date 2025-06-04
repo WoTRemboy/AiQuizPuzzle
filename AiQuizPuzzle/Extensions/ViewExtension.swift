@@ -19,6 +19,14 @@ extension View {
         return keyWindow.safeAreaInsets.top > 20
     }
     
+    internal func bottomSafeAreaValue() -> CGFloat {
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let keyWindow = windowScene.windows.first(where: \.isKeyWindow) else {
+            return 0
+        }
+        return keyWindow.safeAreaInsets.bottom
+    }
+    
     internal func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }

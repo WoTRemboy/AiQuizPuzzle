@@ -18,7 +18,7 @@ struct OnboardingScreenView: View {
     
     internal var body: some View {
         if viewModel.skipOnboarding {
-            QuizInfoView()
+            ContentView()
         } else {
             onboardingFlow
                 .background {
@@ -31,7 +31,7 @@ struct OnboardingScreenView: View {
     private var onboardingFlow: some View {
         VStack(spacing: 0) {
             title
-                .padding(.top, 54)
+                .padding(.top, hasNotch() ? 54 : 20)
             
             if viewModel.beginOnboarding {
                 mainOnboardingContent
@@ -65,7 +65,7 @@ struct OnboardingScreenView: View {
                  ? Texts.Onboarding.about
                  : Texts.Onboarding.welcome)
             .font(.Opening.Onboarding.title())
-            .foregroundStyle(Color.LabelColors.labelReversed)
+            .foregroundStyle(Color.LabelColors.labelWhite)
             .multilineTextAlignment(.center)
             .contentTransition(.numericText())
             
@@ -145,30 +145,13 @@ struct OnboardingScreenView: View {
             .contentTransition(.numericText())
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             
-            .foregroundColor(Color.LabelColors.labelReversed)
+            .foregroundColor(Color.LabelColors.labelWhite)
             .background(Color.Button.orange)
             .clipShape(RoundedRectangle(cornerRadius: 20))
         }
         .frame(height: 68)
         .frame(maxWidth: .infinity)
         .padding(.horizontal, 28)
-    }
-    
-    // MARK: - Terms and Policy
-    
-    /// Displays the terms of service and privacy policy acknowledgment text.
-    private var termsPolicyLabel: some View {
-        if let attributedText = try? AttributedString(markdown: Texts.Onboarding.Terms.markdown) {
-            return Text(attributedText)
-                .font(.system(size: 14))
-                .fontWeight(.medium)
-                .foregroundStyle(Color.LabelColors.labelReversed)
-        } else {
-            return Text(Texts.Onboarding.Terms.markdownError)
-                .font(.system(size: 14))
-                .fontWeight(.medium)
-                .foregroundStyle(Color.LabelColors.labelReversed)
-        }
     }
     
     private var background: some View {

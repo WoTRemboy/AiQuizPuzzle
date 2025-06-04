@@ -37,6 +37,18 @@ extension Font {
         }
     }
     
+    enum MainPage {
+        enum Cell {
+            static func title() -> Font? {
+                Font.custom("EpilepsySans", size: 20)
+            }
+            
+            static func button() -> Font? {
+                Font.custom("EpilepsySansBold", size: 30)
+            }
+        }
+    }
+    
     // MARK: - Titles
 
     static func largeTitle() -> Font? {

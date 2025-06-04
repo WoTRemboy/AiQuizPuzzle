@@ -12,6 +12,7 @@ struct SplashScreenView: View {
     
     // MARK: - Properties
     
+    @AppStorage(Keys.UserDefaults.skipOnboarding) private var skipOnboarding: Bool = false
     /// Indicates whether to show the main onboarding screen.
     @State private var isActive = false
     /// Controls the index of the displayed text during splash animation.
@@ -32,7 +33,7 @@ struct SplashScreenView: View {
                 .onAppear {
                     // Hides splash after a delay
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        withAnimation(.easeInOut(duration: 0.2)) {
+                        withAnimation(.easeInOut(duration: skipOnboarding ? 0.3 : 0.7)) {
                             self.isActive = true
                         }
                     }
@@ -45,9 +46,8 @@ struct SplashScreenView: View {
     /// The main content of the splash screen, including logo and animated title.
     private var content: some View {
         ZStack {
-            // Background color
-            Color.purple
-                .ignoresSafeArea()
+            // Background gradient
+            BackgroundView()
             
             VStack(spacing: 20) {
                 // App logo
@@ -59,7 +59,7 @@ struct SplashScreenView: View {
                 
                 // App title text
                 Text(texts[id])
-                    .foregroundStyle(Color.LabelColors.labelReversed)
+                    .foregroundStyle(Color.LabelColors.labelWhite)
                     .font(.Opening.SplashScreen.title())
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)

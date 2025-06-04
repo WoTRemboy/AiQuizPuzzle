@@ -53,6 +53,20 @@ final class Texts {
             static let description = "Отслеживай рост своих знаний и получай награды за активность"
         }
     }
+    
+    enum MainPage {
+        enum Daily {
+            static let title = "Ежедневный тест"
+            static let play = "Играть"
+        }
+        
+        enum Resume {
+            static let title = "Продолжить тест"
+            static let namePlaceholder = "Название теста"
+            static let count = "Количество"
+            static let start = "Начать"
+        }
+    }
 }
 
 

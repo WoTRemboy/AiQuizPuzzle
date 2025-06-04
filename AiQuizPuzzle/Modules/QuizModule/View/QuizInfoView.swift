@@ -11,6 +11,8 @@ import FirebaseFirestore
 
 struct QuizInfoView: View {
     
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var quizInfo: QuizInfo?
     @State private var questions: [QuizQuestion] = []
     @State private var startQuiz: Bool = false
@@ -20,10 +22,21 @@ struct QuizInfoView: View {
     internal var body: some View {
         if let quizInfo {
             VStack(spacing: 10) {
-                Text(quizInfo.title)
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .hAlign(.leading)
+                HStack {
+                    Text(quizInfo.title)
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .hAlign(.leading)
+                    
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.black)
+                    }
+                }
                 
                 customLabel("list.bullet.rectangle.portrait", String(questions.count), "Multiple Choice Questions")
                     .padding(.top, 20)
