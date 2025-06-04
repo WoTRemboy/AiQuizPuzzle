@@ -21,6 +21,9 @@ struct MainPageView: View {
         .fullScreenCover(isPresented: $showSheet) {
             QuizInfoView()
         }
+        .overlay(alignment: .top) {
+            BlurRectangleView()
+        }
         .background(background)
     }
     
