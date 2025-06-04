@@ -63,6 +63,11 @@ final class Texts {
         enum Resume {
             static let title = "Продолжить тест"
             static let namePlaceholder = "Название теста"
+        }
+        
+        enum Practice {
+            static let title = "Проработать ошибки"
+            static let description = "Начало пути к успеху"
             static let count = "Количество"
             static let start = "Начать"
         }

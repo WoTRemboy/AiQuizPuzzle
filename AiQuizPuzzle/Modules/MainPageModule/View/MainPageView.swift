@@ -19,7 +19,11 @@ struct MainPageView: View {
                 
                 ResumeQuizCell(name: Texts.MainPage.Resume.namePlaceholder,
                                progress: 70.23) {
-                    
+                    // Resume Quiz Cell Action
+                }
+                
+                PracticeQuizCell {
+                    // Practice Quiz Cell Action
                 }
             }
             .padding(.horizontal, 26)

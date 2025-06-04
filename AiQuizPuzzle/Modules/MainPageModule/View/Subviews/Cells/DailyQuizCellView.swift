@@ -16,12 +16,13 @@ struct DailyQuizCellView: View {
     }
     
     internal var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 24) {
                 title
                 playButton
             }
-            Spacer()
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
             Image.MainPage.dailyQuiz
         }
         .padding(.leading, 16)

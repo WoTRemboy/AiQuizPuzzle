@@ -32,7 +32,6 @@ struct ResumeQuizCell: View {
         VStack(spacing: 8) {
             HStack {
                 titleName
-                Spacer()
                 progressLabel
             }
             progressBar
@@ -49,6 +48,7 @@ struct ResumeQuizCell: View {
             titleLabel
             quizNameLabel
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
     
     private var titleLabel: some View {

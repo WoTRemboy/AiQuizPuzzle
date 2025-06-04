@@ -54,6 +54,10 @@ extension Font {
             static func progress() -> Font? {
                 Font.custom("EpilepsySansBold", size: 40)
             }
+            
+            static func count() -> Font? {
+                Font.custom("EpilepsySansBold", size: 75)
+            }
         }
     }
     
