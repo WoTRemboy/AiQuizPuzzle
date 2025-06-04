@@ -12,16 +12,45 @@ struct MainPageView: View {
     
     internal var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            DailyQuizCellView() {
-                showSheet.toggle()
+            LazyVStack(spacing: 20) {
+                cellsView
+                segmentsView
             }
-            .padding(.horizontal, 26)
-            .padding(.top)
+            .padding(.bottom, 70)
         }
         .fullScreenCover(isPresented: $showSheet) {
             QuizInfoView()
         }
+        .overlay(alignment: .top) {
+            BlurRectangleView()
+        }
         .background(background)
+    }
+    
+    private var cellsView: some View {
+        VStack(spacing: 20) {
+            DailyQuizCellView() {
+                showSheet.toggle()
+            }
+            
+            ResumeQuizCell(name: Texts.MainPage.Resume.namePlaceholder,
+                           progress: 70) {
+                // Resume Quiz Cell Action
+            }
+            
+            PracticeQuizCell {
+                // Practice Quiz Cell Action
+            }
+        }
+        .padding(.horizontal, 26)
+        .padding(.top)
+    }
+    
+    private var segmentsView: some View {
+        LazyVStack(spacing: 16) {
+            ScrollSegmentView()
+            ScrollSegmentView()
+        }
     }
     
     private var background: some View {

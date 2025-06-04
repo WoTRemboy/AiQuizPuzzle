@@ -57,12 +57,18 @@ final class Texts {
     enum MainPage {
         enum Daily {
             static let title = "Ежедневный тест"
+            static let details = "Детали режима"
             static let play = "Играть"
         }
         
         enum Resume {
             static let title = "Продолжить тест"
             static let namePlaceholder = "Название теста"
+        }
+        
+        enum Practice {
+            static let title = "Ошибки"
+            static let description = "Начало пути к успеху"
             static let count = "Количество"
             static let start = "Начать"
         }
