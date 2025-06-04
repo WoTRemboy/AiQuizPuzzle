@@ -34,7 +34,7 @@ struct MainPageView: View {
             }
             
             ResumeQuizCell(name: Texts.MainPage.Resume.namePlaceholder,
-                           progress: 70.23) {
+                           progress: 70) {
                 // Resume Quiz Cell Action
             }
             

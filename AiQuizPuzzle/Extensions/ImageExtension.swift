@@ -41,4 +41,8 @@ extension Image {
             static let background = Image("TabbarBackgroundAdd")
         }
     }
+    
+    enum ProgressBar {
+        static let cell = Image("ProgressBarCell")
+    }
 }

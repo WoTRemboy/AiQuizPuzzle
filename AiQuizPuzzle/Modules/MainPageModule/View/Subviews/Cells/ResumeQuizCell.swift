@@ -15,7 +15,7 @@ struct ResumeQuizCell: View {
     
     init(name: String, progress: Float, action: @escaping () -> Void) {
         self.name = name
-        self.progress = progress
+        self.progress = min(100, progress)
         self.action = action
     }
     
@@ -71,10 +71,13 @@ struct ResumeQuizCell: View {
     }
     
     private var progressBar: some View {
-        Image.MainPage.resumeProgressBar
-            .resizable()
-            .scaledToFit()
-            .clipShape(.rect(cornerRadius: 4))
+        GeometryReader { proxy in
+            ProgressBarView(
+                progress: CGFloat(progress) / 100,
+                totalWidth: proxy.size.width
+            )
+        }
+        .frame(height: 12)
     }
 }
 

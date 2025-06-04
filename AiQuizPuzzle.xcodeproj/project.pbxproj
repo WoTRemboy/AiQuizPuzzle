@@ -33,6 +33,7 @@
 		639072A02DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390729F2DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift */; };
 		639072A32DF0D5D0003E05B9 /* SafeAreaInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072A22DF0D5CC003E05B9 /* SafeAreaInsets.swift */; };
 		639072A52DF0D86D003E05B9 /* BlurRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072A42DF0D86D003E05B9 /* BlurRectangleView.swift */; };
+		639072A72DF0DCFF003E05B9 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072A62DF0DCFF003E05B9 /* ProgressBarView.swift */; };
 		63936D2B2DEB6BC700940B34 /* EpilepsySans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D292DEB6BC700940B34 /* EpilepsySans.ttf */; };
 		63936D2C2DEB6BC700940B34 /* EpilepsySansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */; };
 		63936D302DEB6E1800940B34 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */; };
@@ -77,6 +78,7 @@
 		6390729F2DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSegmentViewCell.swift; sourceTree = "<group>"; };
 		639072A22DF0D5CC003E05B9 /* SafeAreaInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaInsets.swift; sourceTree = "<group>"; };
 		639072A42DF0D86D003E05B9 /* BlurRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurRectangleView.swift; sourceTree = "<group>"; };
+		639072A62DF0DCFF003E05B9 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		63936D292DEB6BC700940B34 /* EpilepsySans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySans.ttf; sourceTree = "<group>"; };
 		63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySansBold.ttf; sourceTree = "<group>"; };
 		63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				63185BE62DEDB4E5009BC2D1 /* BackgroundView.swift */,
 				639402902DEF84AD00DA8346 /* CellBackgroundView.swift */,
 				639072A42DF0D86D003E05B9 /* BlurRectangleView.swift */,
+				639072A62DF0DCFF003E05B9 /* ProgressBarView.swift */,
 			);
 			path = CommonElements;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				639072A32DF0D5D0003E05B9 /* SafeAreaInsets.swift in Sources */,
 				635B0A3B2DE88157008E016E /* ImageExtension.swift in Sources */,
 				639072A02DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift in Sources */,
+				639072A72DF0DCFF003E05B9 /* ProgressBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
