@@ -42,82 +42,82 @@ enum OnboardingPage: Int8 {
     internal var colors: [Color] {
         switch self {
         case .welcome:
-            [.GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.purple,
+            [.GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
              
-             .GradientColors.orange,
-             .GradientColors.purple,
-             .GradientColors.red,
+             .GradientColors.Onboarding.orange,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.red,
              
-             .GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.purple]
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple]
             
         case .first:
-            [.GradientColors.purple,
-             .GradientColors.orange,
-             .GradientColors.purple,
+            [.GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.orange,
+             .GradientColors.Onboarding.purple,
 
-             .GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
 
-             .GradientColors.red,
-             .GradientColors.purple,
-             .GradientColors.purple]
+             .GradientColors.Onboarding.red,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple]
             
         case .second:
-            [.GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.orange,
+            [.GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.orange,
              
-             .GradientColors.red,
-             .GradientColors.purple,
-             .GradientColors.purple,
+             .GradientColors.Onboarding.red,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
              
-             .GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.purple]
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple]
             
         case .third:
-            [.GradientColors.red,
-             .GradientColors.red,
-             .GradientColors.purple,
+            [.GradientColors.Onboarding.red,
+             .GradientColors.Onboarding.red,
+             .GradientColors.Onboarding.purple,
              
-             .GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.orange,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.orange,
              
-             .GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.purple]
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple]
             
         case .fourth:
-            [.GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.purple,
+            [.GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
              
-             .GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.red,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.red,
              
-             .GradientColors.orange,
-             .GradientColors.purple,
-             .GradientColors.purple]
+             .GradientColors.Onboarding.orange,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple]
             
         case .fifth:
-            [.GradientColors.orange,
-             .GradientColors.orange,
-             .GradientColors.purple,
+            [.GradientColors.Onboarding.orange,
+             .GradientColors.Onboarding.orange,
+             .GradientColors.Onboarding.purple,
 
-             .GradientColors.purple,
-             .GradientColors.purple,
-             .GradientColors.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.purple,
 
-             .GradientColors.purple,
-             .GradientColors.red,
-             .GradientColors.red]
+             .GradientColors.Onboarding.purple,
+             .GradientColors.Onboarding.red,
+             .GradientColors.Onboarding.red]
         }
     }
 }

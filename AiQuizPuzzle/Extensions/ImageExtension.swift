@@ -23,4 +23,20 @@ extension Image {
             static let fifth = Image("OnboardingFifth")
         }
     }
+    
+    enum MainPage {
+        static let dailyQuiz = Image("DailyQuizCellIcon")
+    }
+    
+    enum Tabbar {
+        static let home = Image("TabbarIconHome")
+        static let stats = Image("TabbarIconStats")
+        static let quiz = Image("TabbarIconQuiz")
+        static let settings = Image("TabbarIconSettings")
+        
+        enum AddButton {
+            static let icon = Image("TabbarIconAdd")
+            static let background = Image("TabbarBackgroundAdd")
+        }
+    }
 }
