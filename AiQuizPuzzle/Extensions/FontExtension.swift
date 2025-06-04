@@ -59,6 +59,16 @@ extension Font {
                 Font.custom("EpilepsySansBold", size: 75)
             }
         }
+        
+        enum Segment {
+            static func title() -> Font? {
+                Font.custom("EpilepsySans", size: 40)
+            }
+            
+            static func cell() -> Font? {
+                Font.custom("EpilepsySans", size: 20)
+            }
+        }
     }
     
     // MARK: - Titles

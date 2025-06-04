@@ -29,6 +29,8 @@
 		636F354B2DEB169300B19323 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F354A2DEB169300B19323 /* OnboardingCardView.swift */; };
 		639072942DF042B8003E05B9 /* ResumeQuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072932DF042B8003E05B9 /* ResumeQuizCell.swift */; };
 		6390729B2DF08277003E05B9 /* PracticeQuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390729A2DF08277003E05B9 /* PracticeQuizCell.swift */; };
+		6390729E2DF0A669003E05B9 /* ScrollSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390729D2DF0A669003E05B9 /* ScrollSegmentView.swift */; };
+		639072A02DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390729F2DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift */; };
 		63936D2B2DEB6BC700940B34 /* EpilepsySans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D292DEB6BC700940B34 /* EpilepsySans.ttf */; };
 		63936D2C2DEB6BC700940B34 /* EpilepsySansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */; };
 		63936D302DEB6E1800940B34 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */; };
@@ -69,6 +71,8 @@
 		636F354A2DEB169300B19323 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
 		639072932DF042B8003E05B9 /* ResumeQuizCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeQuizCell.swift; sourceTree = "<group>"; };
 		6390729A2DF08277003E05B9 /* PracticeQuizCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuizCell.swift; sourceTree = "<group>"; };
+		6390729D2DF0A669003E05B9 /* ScrollSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSegmentView.swift; sourceTree = "<group>"; };
+		6390729F2DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSegmentViewCell.swift; sourceTree = "<group>"; };
 		63936D292DEB6BC700940B34 /* EpilepsySans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySans.ttf; sourceTree = "<group>"; };
 		63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySansBold.ttf; sourceTree = "<group>"; };
 		63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
@@ -263,6 +267,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		6390729C2DF0A650003E05B9 /* Segments */ = {
+			isa = PBXGroup;
+			children = (
+				6390729D2DF0A669003E05B9 /* ScrollSegmentView.swift */,
+				6390729F2DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift */,
+			);
+			path = Segments;
+			sourceTree = "<group>";
+		};
 		63936D262DEB6B7600940B34 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				639072952DF042BE003E05B9 /* Cells */,
+				6390729C2DF0A650003E05B9 /* Segments */,
 				639402922DEF8B2500DA8346 /* CellPlayButton.swift */,
 			);
 			path = Subviews;
@@ -454,6 +468,7 @@
 				6390729B2DF08277003E05B9 /* PracticeQuizCell.swift in Sources */,
 				636F35412DEB0D3A00B19323 /* OnboardingScreenView.swift in Sources */,
 				639402852DEE126500DA8346 /* CustomTabBar.swift in Sources */,
+				6390729E2DF0A669003E05B9 /* ScrollSegmentView.swift in Sources */,
 				63185BE22DEDB250009BC2D1 /* MainPageView.swift in Sources */,
 				630E712E2DE764E2006B0A21 /* AiQuizPuzzleApp.swift in Sources */,
 				639402882DEE19A500DA8346 /* ContentView.swift in Sources */,
@@ -465,6 +480,7 @@
 				63185BE72DEDB4E5009BC2D1 /* BackgroundView.swift in Sources */,
 				639402932DEF8B2500DA8346 /* CellPlayButton.swift in Sources */,
 				635B0A3B2DE88157008E016E /* ImageExtension.swift in Sources */,
+				639072A02DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

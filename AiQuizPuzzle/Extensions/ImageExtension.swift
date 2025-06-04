@@ -27,6 +27,7 @@ extension Image {
     enum MainPage {
         static let dailyQuiz = Image("DailyQuizCellIcon")
         static let resumeProgressBar = Image("ResumeQuizCellProgressBar")
+        static let segmentCellIcon = Image("ScrollSegmentViewCellPlaceholder")
     }
     
     enum Tabbar {
