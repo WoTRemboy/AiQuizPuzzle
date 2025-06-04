@@ -67,6 +67,11 @@ extension Color {
         enum Cell {
             static let background = Color("BackgroundCellColor")
             static let stroke = Color("BackgroundCellStroke")
+            static let divider = Color("BackgroundCellDivider")
+        }
+        
+        enum ProgressBar {
+            static let background = Color("BackgroundProgressBar")
         }
     }
     
@@ -74,5 +79,6 @@ extension Color {
         static let selected = Color("TabbarSelected")
         static let unselected = Color("TabbarUnselected")
         static let background = Color("TabbarBackground")
+        static let stroke = Color("TabbarStroke")
     }
 }
