@@ -181,10 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				63185BE42DEDB2BD009BC2D1 /* TermsPolicyLabel.swift */,
-				63185BE62DEDB4E5009BC2D1 /* BackgroundView.swift */,
-				639402902DEF84AD00DA8346 /* CellBackgroundView.swift */,
-				639072A42DF0D86D003E05B9 /* BlurRectangleView.swift */,
 				639072A62DF0DCFF003E05B9 /* ProgressBarView.swift */,
+				639072AA2DF1B8FC003E05B9 /* Background */,
 			);
 			path = CommonElements;
 			sourceTree = "<group>";
@@ -283,6 +281,16 @@
 				6390729F2DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift */,
 			);
 			path = Segments;
+			sourceTree = "<group>";
+		};
+		639072AA2DF1B8FC003E05B9 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				63185BE62DEDB4E5009BC2D1 /* BackgroundView.swift */,
+				639402902DEF84AD00DA8346 /* CellBackgroundView.swift */,
+				639072A42DF0D86D003E05B9 /* BlurRectangleView.swift */,
+			);
+			path = Background;
 			sourceTree = "<group>";
 		};
 		63936D262DEB6B7600940B34 /* Fonts */ = {
@@ -647,7 +655,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.3;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avoqode.AiQuizPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -687,7 +695,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.3;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.avoqode.AiQuizPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
