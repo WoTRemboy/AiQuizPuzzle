@@ -34,6 +34,9 @@
 		639072A32DF0D5D0003E05B9 /* SafeAreaInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072A22DF0D5CC003E05B9 /* SafeAreaInsets.swift */; };
 		639072A52DF0D86D003E05B9 /* BlurRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072A42DF0D86D003E05B9 /* BlurRectangleView.swift */; };
 		639072A72DF0DCFF003E05B9 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072A62DF0DCFF003E05B9 /* ProgressBarView.swift */; };
+		639072AC2DF23E04003E05B9 /* TabBarButtonsOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072AB2DF23E04003E05B9 /* TabBarButtonsOverlay.swift */; };
+		639072AF2DF23E5C003E05B9 /* TabBarMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072AE2DF23E5C003E05B9 /* TabBarMenuButton.swift */; };
+		639072B32DF2487A003E05B9 /* BackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639072B22DF2487A003E05B9 /* BackgroundModifier.swift */; };
 		63936D2B2DEB6BC700940B34 /* EpilepsySans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D292DEB6BC700940B34 /* EpilepsySans.ttf */; };
 		63936D2C2DEB6BC700940B34 /* EpilepsySansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */; };
 		63936D302DEB6E1800940B34 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */; };
@@ -79,6 +82,9 @@
 		639072A22DF0D5CC003E05B9 /* SafeAreaInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaInsets.swift; sourceTree = "<group>"; };
 		639072A42DF0D86D003E05B9 /* BlurRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurRectangleView.swift; sourceTree = "<group>"; };
 		639072A62DF0DCFF003E05B9 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		639072AB2DF23E04003E05B9 /* TabBarButtonsOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonsOverlay.swift; sourceTree = "<group>"; };
+		639072AE2DF23E5C003E05B9 /* TabBarMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMenuButton.swift; sourceTree = "<group>"; };
+		639072B22DF2487A003E05B9 /* BackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundModifier.swift; sourceTree = "<group>"; };
 		63936D292DEB6BC700940B34 /* EpilepsySans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySans.ttf; sourceTree = "<group>"; };
 		63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySansBold.ttf; sourceTree = "<group>"; };
 		63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
@@ -180,9 +186,8 @@
 		63185BE32DEDB29A009BC2D1 /* CommonElements */ = {
 			isa = PBXGroup;
 			children = (
-				63185BE42DEDB2BD009BC2D1 /* TermsPolicyLabel.swift */,
-				639072A62DF0DCFF003E05B9 /* ProgressBarView.swift */,
-				639072AA2DF1B8FC003E05B9 /* Background */,
+				639072B02DF24852003E05B9 /* Views */,
+				639072B12DF2485B003E05B9 /* ViewModifiers */,
 			);
 			path = CommonElements;
 			sourceTree = "<group>";
@@ -293,6 +298,34 @@
 			path = Background;
 			sourceTree = "<group>";
 		};
+		639072AD2DF23E27003E05B9 /* ButtonsOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				639072AB2DF23E04003E05B9 /* TabBarButtonsOverlay.swift */,
+				639072AE2DF23E5C003E05B9 /* TabBarMenuButton.swift */,
+				6394028A2DEF7E1000DA8346 /* TabBarPlusButton.swift */,
+			);
+			path = ButtonsOverlay;
+			sourceTree = "<group>";
+		};
+		639072B02DF24852003E05B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63185BE42DEDB2BD009BC2D1 /* TermsPolicyLabel.swift */,
+				639072A62DF0DCFF003E05B9 /* ProgressBarView.swift */,
+				639072AA2DF1B8FC003E05B9 /* Background */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		639072B12DF2485B003E05B9 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				639072B22DF2487A003E05B9 /* BackgroundModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		63936D262DEB6B7600940B34 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,7 +367,7 @@
 			children = (
 				639402842DEE125E00DA8346 /* CustomTabBar.swift */,
 				639402822DEE120500DA8346 /* TabBarItem.swift */,
-				6394028A2DEF7E1000DA8346 /* TabBarPlusButton.swift */,
+				639072AD2DF23E27003E05B9 /* ButtonsOverlay */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -474,8 +507,11 @@
 				639072942DF042B8003E05B9 /* ResumeQuizCell.swift in Sources */,
 				63185BE52DEDB2BD009BC2D1 /* TermsPolicyLabel.swift in Sources */,
 				635B0A3F2DE8820A008E016E /* ViewExtension.swift in Sources */,
+				639072B32DF2487A003E05B9 /* BackgroundModifier.swift in Sources */,
 				636F35492DEB13F300B19323 /* FontExtension.swift in Sources */,
 				639402912DEF84AD00DA8346 /* CellBackgroundView.swift in Sources */,
+				639072AC2DF23E04003E05B9 /* TabBarButtonsOverlay.swift in Sources */,
+				639072AF2DF23E5C003E05B9 /* TabBarMenuButton.swift in Sources */,
 				63F9D1622DEA116A00C7598A /* QuizInfoView.swift in Sources */,
 				635B0A392DE87FBF008E016E /* ColorExtension.swift in Sources */,
 				63EF32FE2DEC9D1100B19E4F /* OnboardingGradientModel.swift in Sources */,

@@ -16,15 +16,15 @@ struct ContentView: View {
                 .tag(TabRouter.Tab.home)
             
             Text("Stats")
+                .modifier(BackgroundModifier())
                 .tag(TabRouter.Tab.stats)
             
-            Text("Add")
-                .tag(TabRouter.Tab.add)
-            
             Text("Quiz")
+                .modifier(BackgroundModifier())
                 .tag(TabRouter.Tab.quiz)
             
             Text("Settings")
+                .modifier(BackgroundModifier())
                 .tag(TabRouter.Tab.settings)
         }
         .overlay(alignment: .bottom) {

@@ -60,6 +60,7 @@ extension Color {
             static let pink = Color("BackgroundGradientPink")
             static let magenta = Color("BackgroundGradientMagenta")
             static let blue = Color("BackgroundGradientBlue")
+            static let purple = Color("BackgroundGradientPurple")
         }
     }
     

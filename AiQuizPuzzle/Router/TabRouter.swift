@@ -10,10 +10,9 @@ import SwiftUI
 final class TabRouter: ObservableObject {
     @Published var selected: Tab = .home
     
-    enum Tab {
+    enum Tab: CaseIterable {
         case home
         case stats
-        case add
         case quiz
         case settings
         
@@ -31,8 +30,6 @@ final class TabRouter: ObservableObject {
                 Image.Tabbar.home
             case .stats:
                 Image.Tabbar.stats
-            case .add:
-                Image.Tabbar.AddButton.icon
             case .quiz:
                 Image.Tabbar.quiz
             case .settings:
