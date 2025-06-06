@@ -26,8 +26,8 @@ struct CustomTabBar: View {
                     TabBarItem(tab: tab, image: tab.icon)
                 }
                 
-                TabBarPlusButton {
-                    withAnimation(.snappy()) {
+                TabBarPlusButton(isExpanded: isExpanded) {
+                    withAnimation(.snappy(duration: 0.5)) {
                         isExpanded.toggle()
                     }
                 }

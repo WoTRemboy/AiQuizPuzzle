@@ -9,9 +9,11 @@ import SwiftUI
 
 struct TabBarPlusButton: View {
     
+    private let isExpanded: Bool
     private let action: () -> Void
     
-    init(action: @escaping () -> Void) {
+    init(isExpanded: Bool, action: @escaping () -> Void) {
+        self.isExpanded = isExpanded
         self.action = action
     }
     
@@ -19,26 +21,37 @@ struct TabBarPlusButton: View {
         Button {
             action()
         } label: {
-            content
+            if isExpanded {
+                buttonContent(
+                    icon: Image.Tabbar.AddButton.Expanded.icon,
+                    background: Image.Tabbar.AddButton.Expanded.background
+                )
+            } else {
+                buttonContent(
+                    icon: Image.Tabbar.AddButton.Regular.icon,
+                    background: Image.Tabbar.AddButton.Regular.background
+                )
+            }
         }
         .buttonStyle(.plain)
         .contentShape(Circle())
     }
     
-    private var content: some View {
-        Image.Tabbar.AddButton.background
+    private func buttonContent(icon: Image, background: Image) -> some View {
+        background
             .resizable()
             .scaledToFit()
             .frame(width: 90)
             .overlay {
-                Image.Tabbar.AddButton.icon
+                icon
                     .resizable()
                     .scaledToFit()
                     .frame(width: 40)
             }
+            .transition(.scale.combined(with: .opacity))
     }
 }
 
 #Preview {
-    TabBarPlusButton() {}
+    TabBarPlusButton(isExpanded: false) {}
 }
