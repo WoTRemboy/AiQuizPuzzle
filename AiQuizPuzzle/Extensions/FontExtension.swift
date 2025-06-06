@@ -71,6 +71,12 @@ extension Font {
         }
     }
     
+    enum TabBar {
+        static func buttonTitle() -> Font? {
+            Font.custom("EpilepsySans", size: 10)
+        }
+    }
+    
     // MARK: - Titles
 
     static func largeTitle() -> Font? {

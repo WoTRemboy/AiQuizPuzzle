@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TabBarMenuButton: View {
-    private let image: Image
+    private let title: String
     private let action: () -> Void
     
-    init(image: Image, action: @escaping () -> Void) {
-        self.image = image
+    init(title: String, action: @escaping () -> Void) {
+        self.title = title
         self.action = action
     }
     
@@ -20,24 +20,33 @@ struct TabBarMenuButton: View {
         Button {
             action()
         } label: {
-            image
-                .resizable()
-                .scaledToFit()
-                .foregroundStyle(Color.white)
-            
-                .frame(width: 36, height: 36)
-                .padding(16)
-                .background(background)
+            content
         }
         .buttonStyle(.plain)
     }
     
-    private var background: some View {
-        Circle()
-            .fill(Color.TabbarColors.background)
+    private var content: some View {
+        VStack(spacing: 6) {
+            imageView
+            titleLabel
+        }
+    }
+    
+    private var imageView: some View {
+        Image.Tabbar.overlayBackground
+            .resizable()
+            .scaledToFit()
+            .frame(width: 56)
+    }
+    
+    private var titleLabel: some View {
+        Text(title)
+            .font(.TabBar.buttonTitle())
+            .foregroundStyle(Color.LabelColors.labelWhite)
+            .lineLimit(1)
     }
 }
 
 #Preview {
-    TabBarMenuButton(image: Image(systemName: "person.crop.circle")) {}
+    TabBarMenuButton(title: "Difficulty") {}
 }

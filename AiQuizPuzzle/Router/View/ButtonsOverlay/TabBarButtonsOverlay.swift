@@ -17,13 +17,15 @@ struct TabBarButtonsOverlay: View {
     
     internal var body: some View {
         HStack(spacing: 32) {
-            ForEach(TabRouter.Tab.allCases, id: \.self) { tab in
-                let offsetNeeded = (tab == TabRouter.Tab.allCases.first
-                                    || tab == TabRouter.Tab.allCases.last)
-                
-                TabBarMenuButton(image: tab.icon) {}
-                    .offset(y: offsetNeeded ? -5 : 0)
-            }
+            TabBarMenuButton(title: Texts.TabBar.difficulty) {}
+                .offset(y: -5)
+            
+            TabBarMenuButton(title: Texts.TabBar.raiting) {}
+            
+            TabBarMenuButton(title: Texts.TabBar.create) {}
+            
+            TabBarMenuButton(title: Texts.TabBar.quiz) {}
+                .offset(y: -5)
         }
         .transition(.scale.combined(with: .opacity))
         .padding(.bottom, contentHeight + 36)
