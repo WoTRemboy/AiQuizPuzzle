@@ -73,6 +73,13 @@ final class Texts {
             static let start = "Начать"
         }
     }
+    
+    enum TabBar {
+        static let difficulty = "Сложность"
+        static let raiting = "Топ"
+        static let create = "Создать"
+        static let quiz = "Мои квизы"
+    }
 }
 
 
