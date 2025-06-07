@@ -9,14 +9,12 @@ import SwiftUI
 
 struct CustomTabBar: View {
     @EnvironmentObject private var router: TabRouter
-    
-    @State private var isExpanded = false
-    
+        
     private let contentHeight: CGFloat = 64
     
     internal var body: some View {
         ZStack(alignment: .bottom) {
-            if isExpanded {
+            if router.isExpanded {
                 gradient
                 TabBarButtonsOverlay(contentHeight: contentHeight)
             }
@@ -26,9 +24,9 @@ struct CustomTabBar: View {
                     TabBarItem(tab: tab, image: tab.icon)
                 }
                 
-                TabBarPlusButton(isExpanded: isExpanded) {
-                    withAnimation(.snappy(duration: 0.5)) {
-                        isExpanded.toggle()
+                TabBarPlusButton(isExpanded: router.isExpanded) {
+                    withAnimation(.spring(duration: 0.3)) {
+                        router.isExpanded.toggle()
                     }
                 }
                 .offset(y: -(contentHeight / 2))
@@ -62,8 +60,8 @@ struct CustomTabBar: View {
             endPoint: .bottom
         )
         .onTapGesture {
-            withAnimation(.spring()) {
-                isExpanded = false
+            withAnimation(.spring(duration: 0.3)) {
+                router.setExpanded(to: false)
             }
         }
         .zIndex(0)

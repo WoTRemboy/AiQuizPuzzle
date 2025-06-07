@@ -19,6 +19,8 @@ struct TabBarPlusButton: View {
     
     internal var body: some View {
         Button {
+            let impactMed = UIImpactFeedbackGenerator(style: .medium)
+            impactMed.impactOccurred()
             action()
         } label: {
             if isExpanded {

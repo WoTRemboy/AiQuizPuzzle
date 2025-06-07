@@ -16,19 +16,33 @@ struct TabBarButtonsOverlay: View {
     }
     
     internal var body: some View {
+        HStack {
+            leftSideButtons
+            rightSideButtons
+        }
+        .transition(.scale.combined(with: .opacity))
+        .padding(.bottom, contentHeight + 36)
+        .padding(.horizontal, 16)
+    }
+    
+    private var leftSideButtons: some View {
         HStack(spacing: 32) {
             TabBarMenuButton(title: Texts.TabBar.difficulty) {}
                 .offset(y: -5)
             
             TabBarMenuButton(title: Texts.TabBar.raiting) {}
-            
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var rightSideButtons: some View {
+        HStack(spacing: 32) {
             TabBarMenuButton(title: Texts.TabBar.create) {}
             
             TabBarMenuButton(title: Texts.TabBar.quiz) {}
                 .offset(y: -5)
         }
-        .transition(.scale.combined(with: .opacity))
-        .padding(.bottom, contentHeight + 36)
+        .frame(maxWidth: .infinity, alignment: .trailing)
     }
 }
 

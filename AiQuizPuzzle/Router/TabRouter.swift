@@ -8,7 +8,8 @@
 import SwiftUI
 
 final class TabRouter: ObservableObject {
-    @Published var selected: Tab = .home
+    @Published internal var selected: Tab = .home
+    @Published internal var isExpanded: Bool = false
     
     enum Tab: CaseIterable {
         case home
@@ -36,5 +37,9 @@ final class TabRouter: ObservableObject {
                 Image.Tabbar.settings
             }
         }
+    }
+    
+    internal func setExpanded(to state: Bool) {
+        isExpanded = state
     }
 }
