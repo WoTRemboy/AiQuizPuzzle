@@ -21,7 +21,7 @@ struct AiQuizPuzzleApp: App {
     
     internal var body: some Scene {
         WindowGroup {
-            CustomNavigationView(appRouter: .init())
+            SplashScreenView()
                 .preferredColorScheme(.light)
         }
     }

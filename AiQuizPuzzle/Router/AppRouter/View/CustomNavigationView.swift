@@ -13,11 +13,14 @@ struct CustomNavigationView: View {
     
     internal var body: some View {
         NavigationStack(path: $appRouter.paths) {
-            // Views will be resolved here
+            appRouter.resolveInitialRouter().makeView()
+                .navigationDestination(for: AnyRoutable.self) { viewFactory in
+                    viewFactory.makeView()
+                }
         }
     }
 }
 
 #Preview {
-    CustomNavigationView(appRouter: <#AppRouter#>)
+    CustomNavigationView(appRouter: .init())
 }

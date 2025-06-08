@@ -10,9 +10,19 @@ import SwiftUI
 final class AppRouter: ObservableObject, NavigationCoordinator {
     @Published internal var paths = NavigationPath()
     
+    init(paths: NavigationPath = NavigationPath()) {
+        self.paths = paths
+    }
+    
+    internal func resolveInitialRouter() -> any Routable {
+        let mainPageRouter = MainPageRouter(rootCoordinator: self)
+        return mainPageRouter
+    }
+    
     internal func push(_ router: any Routable) {
         DispatchQueue.main.async {
-            self.paths.append(router)
+            let wrappedRouter = AnyRoutable(router)
+            self.paths.append(wrappedRouter)
         }
     }
     
@@ -27,16 +37,4 @@ final class AppRouter: ObservableObject, NavigationCoordinator {
             self.paths.removeLast(self.paths.count)
         }
     }
-}
-
-typealias Routable = ViewFactory & Hashable
-
-protocol ViewFactory {
-    func makeView() -> AnyView
-}
-
-protocol NavigationCoordinator {
-    func push(_ path: any Routable)
-    func popLast()
-    func popToRoot()
 }
