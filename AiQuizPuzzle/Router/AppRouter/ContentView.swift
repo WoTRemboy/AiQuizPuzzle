@@ -21,6 +21,10 @@ struct ContentView: View {
         TabView(selection: $appRouter.selectedTab) {
             NavigationStack(path: bindingForTab(.home)) {
                 MainPageView()
+                    .environmentObject(appRouter)
+                    .navigationDestination(for: AppRouter.Route.self) { route in
+                        route.destinationView(tab: .home, appRouter: appRouter)
+                    }
             }
             .tag(AppRouter.Tab.home)
             

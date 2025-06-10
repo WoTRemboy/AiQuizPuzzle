@@ -21,7 +21,7 @@ struct TabBarItem: View {
     internal var body: some View {
         Button {
             withAnimation(.easeInOut(duration: 0.1)) {
-                appRouter.selectedTab = tab
+                appRouter.setTab(to: tab)
             }
         } label: {
             image

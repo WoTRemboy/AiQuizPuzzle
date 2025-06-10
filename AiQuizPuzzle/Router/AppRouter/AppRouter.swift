@@ -33,17 +33,27 @@ final class AppRouter: ObservableObject {
         case main, quizInfo, statsDetail, settingsDetail
     }
     
-    func push(_ route: Route, in tab: Tab) {
+    internal func push(_ route: Route, in tab: Tab) {
         navigationPaths[tab, default: []].append(route)
     }
-    func pop(in tab: Tab) {
+    
+    internal func pop(in tab: Tab) {
         _ = navigationPaths[tab]?.popLast()
     }
-    func popToRoot(in tab: Tab) {
+    
+    internal func popToRoot(in tab: Tab) {
         navigationPaths[tab] = []
     }
     
-    func setExpanded(to state: Bool) {
+    internal func setTab(to tab: Tab) {
+        if selectedTab == tab {
+            popToRoot(in: tab)
+        } else {
+            selectedTab = tab
+        }
+    }
+    
+    internal func setExpanded(to state: Bool) {
         isExpanded = state
     }
 }
