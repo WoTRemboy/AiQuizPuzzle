@@ -8,31 +8,31 @@
 import SwiftUI
 
 struct CustomTabBar: View {
-    @EnvironmentObject private var router: TabRouter
+    @EnvironmentObject private var appRouter: AppRouter
         
     private let contentHeight: CGFloat = 64
     
     internal var body: some View {
         ZStack(alignment: .bottom) {
-            if router.isExpanded {
+            if appRouter.isExpanded {
                 gradient
                 TabBarButtonsOverlay(contentHeight: contentHeight)
             }
             
             HStack(spacing: 0) {
-                ForEach(TabRouter.Tab.leftCases, id: \.self) { tab in
+                ForEach(AppRouter.Tab.leftCases, id: \.self) { tab in
                     TabBarItem(tab: tab, image: tab.icon)
                 }
                 
-                TabBarPlusButton(isExpanded: router.isExpanded) {
+                TabBarPlusButton(isExpanded: appRouter.isExpanded) {
                     withAnimation(.spring(duration: 0.3)) {
-                        router.isExpanded.toggle()
+                        appRouter.isExpanded.toggle()
                     }
                 }
                 .offset(y: -(contentHeight / 2))
                 .frame(width: 90, height: 90)
                 
-                ForEach(TabRouter.Tab.rightCases, id: \.self) { tab in
+                ForEach(AppRouter.Tab.rightCases, id: \.self) { tab in
                     TabBarItem(tab: tab, image: tab.icon)
                 }
             }
@@ -61,7 +61,7 @@ struct CustomTabBar: View {
         )
         .onTapGesture {
             withAnimation(.spring(duration: 0.3)) {
-                router.setExpanded(to: false)
+                appRouter.setExpanded(to: false)
             }
         }
         .zIndex(0)
@@ -72,5 +72,5 @@ struct CustomTabBar: View {
     CustomTabBar()
         .frame(maxHeight: .infinity, alignment: .bottom)
         .background(BackgroundView())
-        .environmentObject(TabRouter())
+        .environmentObject(AppRouter())
 }

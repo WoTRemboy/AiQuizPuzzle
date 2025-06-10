@@ -13,11 +13,7 @@
 		63185BE22DEDB250009BC2D1 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63185BE12DEDB250009BC2D1 /* MainPageView.swift */; };
 		63185BE52DEDB2BD009BC2D1 /* TermsPolicyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63185BE42DEDB2BD009BC2D1 /* TermsPolicyLabel.swift */; };
 		63185BE72DEDB4E5009BC2D1 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63185BE62DEDB4E5009BC2D1 /* BackgroundView.swift */; };
-		6350AE982DF5DECD000BBE79 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6350AE972DF5DECB000BBE79 /* AppRouter.swift */; };
-		6350AE9E2DF5DF70000BBE79 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6350AE9D2DF5DF70000BBE79 /* CustomNavigationView.swift */; };
-		6350AEA12DF5E36D000BBE79 /* MainPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6350AEA02DF5E368000BBE79 /* MainPageRouter.swift */; };
-		6350AEA32DF5E6ED000BBE79 /* AppRouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6350AEA22DF5E6E9000BBE79 /* AppRouterModel.swift */; };
-		6350AEA82DF5E7B1000BBE79 /* AnyRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6350AEA72DF5E7AE000BBE79 /* AnyRoutable.swift */; };
+		633BD9092DF86BA200AB89F9 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633BD9082DF86BA200AB89F9 /* AppRouter.swift */; };
 		635B0A392DE87FBF008E016E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A382DE87FBB008E016E /* ColorExtension.swift */; };
 		635B0A3B2DE88157008E016E /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A3A2DE88153008E016E /* ImageExtension.swift */; };
 		635B0A3D2DE88161008E016E /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B0A3C2DE8815E008E016E /* Labels.swift */; };
@@ -45,7 +41,6 @@
 		63936D2B2DEB6BC700940B34 /* EpilepsySans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D292DEB6BC700940B34 /* EpilepsySans.ttf */; };
 		63936D2C2DEB6BC700940B34 /* EpilepsySansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */; };
 		63936D302DEB6E1800940B34 /* Micro5-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */; };
-		639402812DEE11C100DA8346 /* TabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639402802DEE11B400DA8346 /* TabRouter.swift */; };
 		639402832DEE120800DA8346 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639402822DEE120500DA8346 /* TabBarItem.swift */; };
 		639402852DEE126500DA8346 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639402842DEE125E00DA8346 /* CustomTabBar.swift */; };
 		639402882DEE19A500DA8346 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639402872DEE19A100DA8346 /* ContentView.swift */; };
@@ -69,11 +64,7 @@
 		63185BE12DEDB250009BC2D1 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		63185BE42DEDB2BD009BC2D1 /* TermsPolicyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsPolicyLabel.swift; sourceTree = "<group>"; };
 		63185BE62DEDB4E5009BC2D1 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		6350AE972DF5DECB000BBE79 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		6350AE9D2DF5DF70000BBE79 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
-		6350AEA02DF5E368000BBE79 /* MainPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageRouter.swift; sourceTree = "<group>"; };
-		6350AEA22DF5E6E9000BBE79 /* AppRouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterModel.swift; sourceTree = "<group>"; };
-		6350AEA72DF5E7AE000BBE79 /* AnyRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRoutable.swift; sourceTree = "<group>"; };
+		633BD9082DF86BA200AB89F9 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		635B0A382DE87FBB008E016E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		635B0A3A2DE88153008E016E /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		635B0A3C2DE8815E008E016E /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
@@ -98,7 +89,6 @@
 		63936D292DEB6BC700940B34 /* EpilepsySans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySans.ttf; sourceTree = "<group>"; };
 		63936D2A2DEB6BC700940B34 /* EpilepsySansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EpilepsySansBold.ttf; sourceTree = "<group>"; };
 		63936D2F2DEB6E1800940B34 /* Micro5-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Micro5-Regular.ttf"; sourceTree = "<group>"; };
-		639402802DEE11B400DA8346 /* TabRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRouter.swift; sourceTree = "<group>"; };
 		639402822DEE120500DA8346 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		639402842DEE125E00DA8346 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		639402872DEE19A100DA8346 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -189,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				6394028C2DEF839500DA8346 /* View */,
-				6350AE9F2DF5E35A000BBE79 /* Router */,
 			);
 			path = MainPageModule;
 			sourceTree = "<group>";
@@ -203,56 +192,13 @@
 			path = CommonElements;
 			sourceTree = "<group>";
 		};
-		6350AE992DF5DF18000BBE79 /* TabRouter */ = {
+		6350AE992DF5DF18000BBE79 /* AppRouter */ = {
 			isa = PBXGroup;
 			children = (
 				639402872DEE19A100DA8346 /* ContentView.swift */,
-				639402802DEE11B400DA8346 /* TabRouter.swift */,
-			);
-			path = TabRouter;
-			sourceTree = "<group>";
-		};
-		6350AE9A2DF5DF23000BBE79 /* AppRouter */ = {
-			isa = PBXGroup;
-			children = (
-				6350AEA42DF5E771000BBE79 /* Model */,
-				6350AEA62DF5E78F000BBE79 /* View */,
-				6350AEA52DF5E784000BBE79 /* ViewModel */,
+				633BD9082DF86BA200AB89F9 /* AppRouter.swift */,
 			);
 			path = AppRouter;
-			sourceTree = "<group>";
-		};
-		6350AE9F2DF5E35A000BBE79 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				6350AEA02DF5E368000BBE79 /* MainPageRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		6350AEA42DF5E771000BBE79 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				6350AEA72DF5E7AE000BBE79 /* AnyRoutable.swift */,
-				6350AEA22DF5E6E9000BBE79 /* AppRouterModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6350AEA52DF5E784000BBE79 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				6350AE972DF5DECB000BBE79 /* AppRouter.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		6350AEA62DF5E78F000BBE79 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6350AE9D2DF5DF70000BBE79 /* CustomNavigationView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		635B0A372DE87FAF008E016E /* Extensions */ = {
@@ -418,8 +364,7 @@
 		6394027F2DEE11AC00DA8346 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				6350AE9A2DF5DF23000BBE79 /* AppRouter */,
-				6350AE992DF5DF18000BBE79 /* TabRouter */,
+				6350AE992DF5DF18000BBE79 /* AppRouter */,
 				639402892DEF7DEC00DA8346 /* View */,
 			);
 			path = Router;
@@ -565,10 +510,7 @@
 			files = (
 				636F354B2DEB169300B19323 /* OnboardingCardView.swift in Sources */,
 				639072A52DF0D86D003E05B9 /* BlurRectangleView.swift in Sources */,
-				6350AEA12DF5E36D000BBE79 /* MainPageRouter.swift in Sources */,
-				6350AE982DF5DECD000BBE79 /* AppRouter.swift in Sources */,
 				635B0A432DE8849D008E016E /* SplashScreenView.swift in Sources */,
-				639402812DEE11C100DA8346 /* TabRouter.swift in Sources */,
 				639072942DF042B8003E05B9 /* ResumeQuizCell.swift in Sources */,
 				63185BE52DEDB2BD009BC2D1 /* TermsPolicyLabel.swift in Sources */,
 				635B0A3F2DE8820A008E016E /* ViewExtension.swift in Sources */,
@@ -580,6 +522,7 @@
 				63F9D1622DEA116A00C7598A /* QuizInfoView.swift in Sources */,
 				635B0A392DE87FBF008E016E /* ColorExtension.swift in Sources */,
 				63EF32FE2DEC9D1100B19E4F /* OnboardingGradientModel.swift in Sources */,
+				633BD9092DF86BA200AB89F9 /* AppRouter.swift in Sources */,
 				635B0A3D2DE88161008E016E /* Labels.swift in Sources */,
 				63F9D1692DEA315700C7598A /* QuizQestionsView.swift in Sources */,
 				636F35442DEB0D5A00B19323 /* OnboardingViewModel.swift in Sources */,
@@ -597,13 +540,10 @@
 				6394028B2DEF7E1000DA8346 /* TabBarPlusButton.swift in Sources */,
 				6394028E2DEF83F200DA8346 /* DailyQuizCellView.swift in Sources */,
 				63185BE72DEDB4E5009BC2D1 /* BackgroundView.swift in Sources */,
-				6350AE9E2DF5DF70000BBE79 /* CustomNavigationView.swift in Sources */,
 				639402932DEF8B2500DA8346 /* CellPlayButton.swift in Sources */,
-				6350AEA32DF5E6ED000BBE79 /* AppRouterModel.swift in Sources */,
 				639072A32DF0D5D0003E05B9 /* SafeAreaInsets.swift in Sources */,
 				635B0A3B2DE88157008E016E /* ImageExtension.swift in Sources */,
 				639072A02DF0A7F5003E05B9 /* ScrollSegmentViewCell.swift in Sources */,
-				6350AEA82DF5E7B1000BBE79 /* AnyRoutable.swift in Sources */,
 				639072A72DF0DCFF003E05B9 /* ProgressBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
