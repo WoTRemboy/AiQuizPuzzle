@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct TabBarItem: View {
-    @EnvironmentObject private var router: TabRouter
+    @EnvironmentObject private var appRouter: AppRouter
     
-    private let tab: TabRouter.Tab
+    private let tab: AppRouter.Tab
     private let image: Image
     
-    init(tab: TabRouter.Tab, image: Image) {
+    init(tab: AppRouter.Tab, image: Image) {
         self.tab = tab
         self.image = image
     }
@@ -21,7 +21,7 @@ struct TabBarItem: View {
     internal var body: some View {
         Button {
             withAnimation(.easeInOut(duration: 0.1)) {
-                router.selected = tab
+                appRouter.setTab(to: tab)
             }
         } label: {
             image
@@ -29,7 +29,7 @@ struct TabBarItem: View {
                 .resizable()
                 .scaledToFit()
                 .foregroundStyle(
-                    router.selected == tab
+                    appRouter.selectedTab == tab
                     ? Color.TabbarColors.selected
                     : Color.TabbarColors.unselected
                 )
@@ -43,5 +43,5 @@ struct TabBarItem: View {
 
 #Preview {
     TabBarItem(tab: .home, image: Image.Tabbar.home)
-        .environmentObject(TabRouter())
+        .environmentObject(AppRouter())
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainPageView: View {
+    @EnvironmentObject private var appRouter: AppRouter
     @State private var showSheet: Bool = false
     
     internal var body: some View {
@@ -18,6 +19,7 @@ struct MainPageView: View {
             }
             .padding(.bottom, 70)
         }
+        .navigationBarHidden(true)
         .fullScreenCover(isPresented: $showSheet) {
             QuizInfoView()
         }
@@ -32,6 +34,11 @@ struct MainPageView: View {
             DailyQuizCellView() {
                 showSheet.toggle()
             }
+            
+            Button("Показать QuizInfo") {
+                appRouter.push(.quizInfo, in: .home)
+            }
+            .buttonStyle(.borderedProminent)
             
             ResumeQuizCell(name: Texts.MainPage.Resume.namePlaceholder,
                            progress: 70) {
@@ -61,4 +68,5 @@ struct MainPageView: View {
 
 #Preview {
     MainPageView()
+        .environmentObject(AppRouter())
 }
