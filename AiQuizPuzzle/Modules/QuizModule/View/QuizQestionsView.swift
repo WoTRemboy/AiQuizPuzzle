@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuizQestionsView: View {
-    private var info: QuizInfo
+    private var info: Quiz
     @State private var questions: [QuizQuestion]
     
     @Environment(\.dismiss) private var dismiss
@@ -16,7 +16,7 @@ struct QuizQestionsView: View {
     @State private var currentIndex: Int = 0
     @State private var score: CGFloat = 0
     
-    init(info: QuizInfo, questions: [QuizQuestion]) {
+    init(info: Quiz, questions: [QuizQuestion]) {
         self.info = info
         self.questions = questions
     }
@@ -33,7 +33,7 @@ struct QuizQestionsView: View {
             }
             .hAlign(.leading)
             
-            Text(info.title)
+            Text(info.name)
                 .font(.title)
                 .fontWeight(.semibold)
                 .foregroundStyle(Color.white)
@@ -100,33 +100,33 @@ struct QuizQestionsView: View {
                 .fontWeight(.semibold)
                 .foregroundStyle(.black)
             
-            VStack(spacing: 12) {
-                ForEach(question.options, id: \.self) { option in
-                    ZStack {
-                        optionView(option, tint: .gray)
-                            .opacity(question.answer == option
-                                     && question.tappedAnswer != "" ? 0 : 1)
-                        optionView(option, tint: .green)
-                            .opacity(question.answer == option
-                                     && question.tappedAnswer != "" ? 1 : 0)
-                        optionView(option, tint: .red)
-                            .opacity(question.tappedAnswer == option
-                                     && question.tappedAnswer != question.answer ? 1 : 0)
-                    }
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                        guard questions[currentIndex].tappedAnswer == "" else { return }
-                        withAnimation(.easeInOut) {
-                            questions[currentIndex].tappedAnswer = option
-                            
-                            if question.answer == option {
-                                score += 1
-                            }
-                        }
-                    }
-                }
-            }
-            .padding(.vertical, 10)
+//            VStack(spacing: 12) {
+//                ForEach(question.options, id: \.self) { option in
+//                    ZStack {
+//                        optionView(option, tint: .gray)
+//                            .opacity(question.answer == option
+//                                     && question.tappedAnswer != "" ? 0 : 1)
+//                        optionView(option, tint: .green)
+//                            .opacity(question.answer == option
+//                                     && question.tappedAnswer != "" ? 1 : 0)
+//                        optionView(option, tint: .red)
+//                            .opacity(question.tappedAnswer == option
+//                                     && question.tappedAnswer != question.answer ? 1 : 0)
+//                    }
+//                    .contentShape(Rectangle())
+//                    .onTapGesture {
+//                        guard questions[currentIndex].tappedAnswer == "" else { return }
+//                        withAnimation(.easeInOut) {
+//                            questions[currentIndex].tappedAnswer = option
+//                            
+//                            if question.answer == option {
+//                                score += 1
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//            .padding(.vertical, 10)
         }
         .padding(15)
         .hAlign(.center)
@@ -157,5 +157,5 @@ struct QuizQestionsView: View {
 }
 
 #Preview {
-    QuizQestionsView(info: QuizInfo.sampleData, questions: QuizQuestion.sampleData)
+    QuizQestionsView(info: Quiz.sampleData, questions: QuizQuestion.sampleData)
 }

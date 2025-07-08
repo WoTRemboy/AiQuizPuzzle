@@ -30,6 +30,14 @@ extension Image {
         static let segmentCellIcon = Image("ScrollSegmentViewCellPlaceholder")
     }
     
+    enum Quiz {
+        enum Difficulty {
+            static let easy = Image(systemName: "dial.low")
+            static let normal = Image(systemName: "dial.medium")
+            static let hard = Image(systemName: "dial.high")
+        }
+    }
+    
     enum Tabbar {
         static let home = Image("TabbarIconHome")
         static let stats = Image("TabbarIconStats")
