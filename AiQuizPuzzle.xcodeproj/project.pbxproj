@@ -452,6 +452,15 @@
 			path = DestinationFactories;
 			sourceTree = "<group>";
 		};
+		63F949E12E1ED23300B18BD4 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				63F9D1612DEA116A00C7598A /* QuizInfoView.swift */,
+				63F9D1682DEA315700C7598A /* QuizQestionsView.swift */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
 		63F9D1592DEA0F5000C7598A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,8 +474,7 @@
 		63F9D15E2DEA114100C7598A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				63F9D1612DEA116A00C7598A /* QuizInfoView.swift */,
-				63F9D1682DEA315700C7598A /* QuizQestionsView.swift */,
+				63F949E12E1ED23300B18BD4 /* Legacy */,
 			);
 			path = View;
 			sourceTree = "<group>";
