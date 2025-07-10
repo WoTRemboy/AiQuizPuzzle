@@ -53,9 +53,9 @@ final class QuizViewModel: ObservableObject {
         return currentOption.isCorrect ? .green.opacity(0.3) : .red.opacity(0.3)
     }
     
-//    internal func sensoryFeedback(currentOption: QuizOption) -> SensoryFeedback {
-//        return currentOption.isCorrect ? .impact : .warning
-//    }
+    internal func sensoryFeedback(currentOption: QuizOption) -> SensoryFeedback {
+        return currentOption.isCorrect ? .impact : .warning
+    }
     
     internal func showExplanation(for question: QuizQuestion, option: QuizOption) -> Bool {
         guard question.selectedAnswer != nil else { return false }

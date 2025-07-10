@@ -23,6 +23,12 @@
 		635B0A452DE8882B008E016E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 635B0A442DE8882B008E016E /* GoogleService-Info.plist */; };
 		635B0A482DE888D5008E016E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 635B0A472DE888D5008E016E /* FirebaseAuth */; };
 		635B0A4A2DE888D5008E016E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 635B0A492DE888D5008E016E /* FirebaseFirestore */; };
+		636016252E2020EF00655470 /* QuizSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636016242E2020EA00655470 /* QuizSelfView.swift */; };
+		636016272E20211200655470 /* QuizSelfQuestionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636016262E20211100655470 /* QuizSelfQuestionContent.swift */; };
+		6360162A2E20213C00655470 /* QuizSelfQuestionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636016292E20213B00655470 /* QuizSelfQuestionTitle.swift */; };
+		6360162C2E20214E00655470 /* QuizSelfOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360162B2E20214D00655470 /* QuizSelfOptionView.swift */; };
+		6360162E2E20218000655470 /* QuizSelfBottomBarButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360162D2E20218000655470 /* QuizSelfBottomBarButtons.swift */; };
+		636016302E20219500655470 /* QuizSelfCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360162F2E20219500655470 /* QuizSelfCloseButton.swift */; };
 		636F353C2DEB0D1800B19323 /* OnboardingScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F353B2DEB0D1200B19323 /* OnboardingScreenModel.swift */; };
 		636F35412DEB0D3A00B19323 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F35402DEB0D3A00B19323 /* OnboardingScreenView.swift */; };
 		636F35442DEB0D5A00B19323 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F35432DEB0D5500B19323 /* OnboardingViewModel.swift */; };
@@ -83,6 +89,12 @@
 		635B0A3E2DE88207008E016E /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		635B0A422DE88498008E016E /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		635B0A442DE8882B008E016E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		636016242E2020EA00655470 /* QuizSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelfView.swift; sourceTree = "<group>"; };
+		636016262E20211100655470 /* QuizSelfQuestionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelfQuestionContent.swift; sourceTree = "<group>"; };
+		636016292E20213B00655470 /* QuizSelfQuestionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelfQuestionTitle.swift; sourceTree = "<group>"; };
+		6360162B2E20214D00655470 /* QuizSelfOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelfOptionView.swift; sourceTree = "<group>"; };
+		6360162D2E20218000655470 /* QuizSelfBottomBarButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelfBottomBarButtons.swift; sourceTree = "<group>"; };
+		6360162F2E20219500655470 /* QuizSelfCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSelfCloseButton.swift; sourceTree = "<group>"; };
 		636F353B2DEB0D1200B19323 /* OnboardingScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenModel.swift; sourceTree = "<group>"; };
 		636F35402DEB0D3A00B19323 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		636F35432DEB0D5500B19323 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -256,6 +268,27 @@
 				636F35382DEB0CA500B19323 /* OnboardingSection */,
 			);
 			path = OpeningModule;
+			sourceTree = "<group>";
+		};
+		636016232E20201800655470 /* Actual */ = {
+			isa = PBXGroup;
+			children = (
+				636016242E2020EA00655470 /* QuizSelfView.swift */,
+				636016262E20211100655470 /* QuizSelfQuestionContent.swift */,
+				636016282E20212500655470 /* Subviews */,
+			);
+			path = Actual;
+			sourceTree = "<group>";
+		};
+		636016282E20212500655470 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				636016292E20213B00655470 /* QuizSelfQuestionTitle.swift */,
+				6360162B2E20214D00655470 /* QuizSelfOptionView.swift */,
+				6360162D2E20218000655470 /* QuizSelfBottomBarButtons.swift */,
+				6360162F2E20219500655470 /* QuizSelfCloseButton.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		636F35382DEB0CA500B19323 /* OnboardingSection */ = {
@@ -485,6 +518,7 @@
 		63F9D15E2DEA114100C7598A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				636016232E20201800655470 /* Actual */,
 				63F949E12E1ED23300B18BD4 /* Legacy */,
 			);
 			path = View;
@@ -583,11 +617,16 @@
 			files = (
 				636F354B2DEB169300B19323 /* OnboardingCardView.swift in Sources */,
 				639072A52DF0D86D003E05B9 /* BlurRectangleView.swift in Sources */,
+				636016252E2020EF00655470 /* QuizSelfView.swift in Sources */,
 				635B0A432DE8849D008E016E /* SplashScreenView.swift in Sources */,
 				63F949E52E1ED2D600B18BD4 /* QuizViewModel.swift in Sources */,
+				6360162A2E20213C00655470 /* QuizSelfQuestionTitle.swift in Sources */,
 				639072942DF042B8003E05B9 /* ResumeQuizCell.swift in Sources */,
+				636016272E20211200655470 /* QuizSelfQuestionContent.swift in Sources */,
 				63F032802DF8DF4100183137 /* HomeTabDestinationFactory.swift in Sources */,
 				6393D6B52E1D493A00F9B6B1 /* QuizDifficultyModel.swift in Sources */,
+				6360162E2E20218000655470 /* QuizSelfBottomBarButtons.swift in Sources */,
+				6360162C2E20214E00655470 /* QuizSelfOptionView.swift in Sources */,
 				63185BE52DEDB2BD009BC2D1 /* TermsPolicyLabel.swift in Sources */,
 				635B0A3F2DE8820A008E016E /* ViewExtension.swift in Sources */,
 				639072B32DF2487A003E05B9 /* BackgroundModifier.swift in Sources */,
@@ -609,6 +648,7 @@
 				636F35412DEB0D3A00B19323 /* OnboardingScreenView.swift in Sources */,
 				639402852DEE126500DA8346 /* CustomTabBar.swift in Sources */,
 				6390729E2DF0A669003E05B9 /* ScrollSegmentView.swift in Sources */,
+				636016302E20219500655470 /* QuizSelfCloseButton.swift in Sources */,
 				63F032822DF8DF5600183137 /* StatsTabDestinationFactory.swift in Sources */,
 				63185BE22DEDB250009BC2D1 /* MainPageView.swift in Sources */,
 				6393D6B92E1D4A0D00F9B6B1 /* QuizOptionModel.swift in Sources */,
@@ -780,7 +820,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -820,7 +860,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
