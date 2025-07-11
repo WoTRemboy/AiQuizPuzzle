@@ -13,7 +13,7 @@ struct QuizInfoView: View {
     
     @Environment(\.dismiss) private var dismiss
     
-    @State private var quizInfo: QuizInfo?
+    @State private var quizInfo: Quiz?
     @State private var questions: [QuizQuestion] = []
     @State private var startQuiz: Bool = false
     
@@ -23,7 +23,7 @@ struct QuizInfoView: View {
         if let quizInfo {
             VStack(spacing: 10) {
                 HStack {
-                    Text(quizInfo.title)
+                    Text(quizInfo.name)
                         .font(.title)
                         .fontWeight(.semibold)
                         .hAlign(.leading)
@@ -45,9 +45,9 @@ struct QuizInfoView: View {
                     .padding(.horizontal, -15)
                     .padding(.top, 15)
                 
-                if !quizInfo.rules.isEmpty {
-                    rulesView(quizInfo.rules)
-                }
+//                if !quizInfo.rules.isEmpty {
+//                    rulesView(quizInfo.rules)
+//                }
                 
                 CustomButton(title: "Start Test") {
                     startQuiz.toggle()
@@ -135,7 +135,7 @@ struct QuizInfoView: View {
             .firestore()
             .collection("Quiz")
             .document("Info")
-            .getDocument(as: QuizInfo.self)
+            .getDocument(as: Quiz.self)
         
         let questions = try await Firestore
             .firestore()
