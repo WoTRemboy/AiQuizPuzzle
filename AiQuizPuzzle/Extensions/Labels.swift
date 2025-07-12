@@ -74,6 +74,18 @@ final class Texts {
         }
     }
     
+    enum QuizSelf {
+        enum Toolbar {
+            static let title = "Quiz Topic"
+            static let score = "Score"
+        }
+        enum ConfirmDialog {
+            static let title = "Exit the quiz?"
+            static let message = "All progress will be lost."
+            static let confirm = "Confirm"
+        }
+    }
+    
     enum TabBar {
         static let difficulty = "Сложность"
         static let raiting = "Топ"
